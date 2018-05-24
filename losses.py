@@ -78,13 +78,10 @@ class TripletLoss(nn.Module):
         for i in range(n):
             dist_ap.append(dist[i][mask[i]].max())
             dist_an.append(dist[i][mask[i] == 0].min())
-        dist_ap = torch.cat(dist_ap)
-        dist_an = torch.cat(dist_an)
+        dist_ap = torch.stack(dist_ap)
+        dist_an = torch.stack(dist_an)
         # Compute ranking hinge loss
-        y = dist_an.data.new()
-        y.resize_as_(dist_an.data)
-        y.fill_(1)
-        y = Variable(y)
+        y = torch.ones_like(dist_ap)
         loss = self.ranking_loss(dist_an, dist_ap, y)
         return loss
 
