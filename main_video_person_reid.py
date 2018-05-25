@@ -6,6 +6,9 @@ import datetime
 import argparse
 import os.path as osp
 import numpy as np
+from scipy.linalg import blas
+from tqdm import tqdm
+import gc
 
 import torch
 import torch.nn as nn
@@ -124,13 +127,13 @@ def main():
     queryloader = DataLoader(
         VideoDataset(dataset.query, seq_len=args.seq_len, sample='dense', transform=transform_test),
         batch_size=args.test_batch, shuffle=False, num_workers=args.workers,
-        pin_memory=pin_memory, drop_last=False,
+        pin_memory=False, drop_last=False,
     )
 
     galleryloader = DataLoader(
         VideoDataset(dataset.gallery, seq_len=args.seq_len, sample='dense', transform=transform_test),
         batch_size=args.test_batch, shuffle=False, num_workers=args.workers,
-        pin_memory=pin_memory, drop_last=False,
+        pin_memory=False, drop_last=False,
     )
 
     print("Initializing model: {}".format(args.arch))
@@ -229,7 +232,7 @@ def test(model, queryloader, galleryloader, pool, use_gpu, ranks=[1, 5, 10, 20])
         model.eval()
 
         qf, q_pids, q_camids = [], [], []
-        for batch_idx, (imgs, pids, camids) in enumerate(queryloader):
+        for batch_idx, (imgs, pids, camids) in tqdm(enumerate(queryloader), total=len(queryloader)):
             if use_gpu:
                 imgs = imgs.cuda()
             # imgs = Variable(imgs, volatile=True)
@@ -240,18 +243,20 @@ def test(model, queryloader, galleryloader, pool, use_gpu, ranks=[1, 5, 10, 20])
             features = model(imgs)
             features = features.view(n, -1)
             features = torch.mean(features, 0)
-            features = features.data.cpu()
+            features = features.data.cpu().numpy()
             qf.append(features)
             q_pids.extend(pids)
             q_camids.extend(camids)
-        qf = torch.stack(qf)
+            if batch_idx % 20 == 0:
+                gc.collect()
+        qf = np.asarray(qf, dtype=np.float32)
         q_pids = np.asarray(q_pids)
         q_camids = np.asarray(q_camids)
-
-        print("Extracted features for query set, obtained {}-by-{} matrix".format(qf.size(0), qf.size(1)))
+        gc.collect()
+        print("Extracted features for query set, obtained {}-by-{} matrix".format(qf.shape[0], qf.shape[1]))
 
         gf, g_pids, g_camids = [], [], []
-        for batch_idx, (imgs, pids, camids) in enumerate(galleryloader):
+        for batch_idx, (imgs, pids, camids) in tqdm(enumerate(galleryloader), total=len(galleryloader)):
             if use_gpu:
                 imgs = imgs.cuda()
             # imgs = Variable(imgs, volatile=True)
@@ -264,22 +269,29 @@ def test(model, queryloader, galleryloader, pool, use_gpu, ranks=[1, 5, 10, 20])
                 features = torch.mean(features, 0)
             else:
                 features, _ = torch.max(features, 0)
-            features = features.data.cpu()
+            features = features.data.cpu().numpy()
             gf.append(features)
             g_pids.extend(pids)
             g_camids.extend(camids)
-        gf = torch.stack(gf)
+            if batch_idx % 20 == 0:
+                gc.collect()
+
+        gf = np.asarray(gf, dtype=np.float32)
         g_pids = np.asarray(g_pids)
         g_camids = np.asarray(g_camids)
-
-        print("Extracted features for gallery set, obtained {}-by-{} matrix".format(gf.size(0), gf.size(1)))
+        gc.collect()
+        print("Extracted features for gallery set, obtained {}-by-{} matrix".format(gf.shape[0], gf.shape[1]))
         print("Computing distance matrix")
 
-        m, n = qf.size(0), gf.size(0)
-        distmat = torch.pow(qf, 2).sum(dim=1, keepdim=True).expand(m, n) + \
-                  torch.pow(gf, 2).sum(dim=1, keepdim=True).expand(n, m).t()
-        distmat.addmm_(1, -2, qf, gf.t())
-        distmat = distmat.numpy()
+        m, n = qf.shape[0], gf.shape[0]
+        distmat = np.tile(np.sum(np.power(qf, 2), axis=1, keepdims=True), (1, n)) + \
+                  np.tile(np.sum(np.power(gf, 2), axis=1, keepdims=True), (1, m)).T
+        distmat -= 2 * blas.sgemm(1, qf, gf.T)
+
+        # distmat = np.power(qf, 2).sum(dim=1, keepdim=True).expand(m, n) + \
+        #           torch.pow(gf, 2).sum(dim=1, keepdim=True).expand(n, m).t()
+        # distmat.addmm_(1, -2, qf, gf.t())
+        # distmat = distmat.numpy()
 
         print("Computing CMC and mAP")
         cmc, mAP = evaluate(distmat, q_pids, g_pids, q_camids, g_camids)

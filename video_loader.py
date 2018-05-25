@@ -89,7 +89,7 @@ class VideoDataset(Dataset):
                 last_seq.append(index)
             indices_list.append(last_seq)
             imgs_list = []
-            for indices in indices_list:
+            for indices in indices_list[:32]:
                 imgs = []
                 for index in indices:
                     index = int(index)
@@ -99,10 +99,10 @@ class VideoDataset(Dataset):
                         img = self.transform(img)
                     img = img.unsqueeze(0)
                     imgs.append(img)
-                imgs = torch.cat(imgs, dim=0)
+                imgs = torch.cat(imgs, dim=0)  # (t, 3, h, w)
                 # imgs=imgs.permute(1,0,2,3)
                 imgs_list.append(imgs)
-            imgs_array = torch.stack(imgs_list)
+            imgs_array = torch.stack(imgs_list)  # (n, t, 3, h, w)
             return imgs_array, pid, camid
 
         else:
