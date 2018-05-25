@@ -21,12 +21,12 @@ class ResNet50TP(nn.Module):
     def forward(self, x):
         b = x.size(0)
         t = x.size(1)
-        x = x.view(b * t, x.size(2), x.size(3), x.size(4))
+        x = x.view(b * t, x.size(2), x.size(3), x.size(4))  # (b * t, 3, h, w)
         x = self.base(x)
-        x = F.avg_pool2d(x, x.size()[2:])
+        x = F.avg_pool2d(x, x.size()[2:])  # (b * t, c, 1, 1)
         x = x.view(b, t, -1)
-        x = x.permute(0, 2, 1)
-        f = F.avg_pool1d(x, t)
+        x = x.permute(0, 2, 1)  # (b, c, t)
+        f = F.avg_pool1d(x, t)  # (b, c, 1)
         f = f.view(b, self.feat_dim)
         if not self.training:
             return f
@@ -59,12 +59,12 @@ class ResNet50TA(nn.Module):
     def forward(self, x):
         b = x.size(0)
         t = x.size(1)
-        x = x.view(b * t, x.size(2), x.size(3), x.size(4))
-        x = self.base(x)
-        a = F.relu(self.attention_conv(x))
-        a = a.view(b, t, self.middle_dim)
-        a = a.permute(0, 2, 1)
-        a = F.relu(self.attention_tconv(a))
+        x = x.view(b * t, x.size(2), x.size(3), x.size(4))  # (b * t, 3, h, w)
+        x = self.base(x)  # (b * t, c, oh, ow)
+        a = F.relu(self.attention_conv(x))  # (b * t, c, 1, 1)
+        a = a.view(b, t, self.middle_dim)   # (b, t, c)
+        a = a.permute(0, 2, 1)              # (b, c, t)
+        a = F.relu(self.attention_tconv(a))  # (b, 1, t)
         a = a.view(b, t)
         x = F.avg_pool2d(x, x.size()[2:])
         if self.att_gen == 'softmax':

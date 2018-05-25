@@ -64,10 +64,10 @@ class VideoDataset(Dataset):
                 img_path = img_paths[index]
                 img = read_image(img_path)
                 if self.transform is not None:
-                    img = self.transform(img)
-                img = img.unsqueeze(0)
+                    img = self.transform(img)  # (3, h, w)
+                img = img.unsqueeze(0)  # (1, 3, h, w)
                 imgs.append(img)
-            imgs = torch.cat(imgs, dim=0)
+            imgs = torch.cat(imgs, dim=0)  # (t, 3, h, w)
             # imgs=imgs.permute(1,0,2,3)
             return imgs, pid, camid
 
