@@ -1,5 +1,5 @@
 ==========
-Args:Namespace(arch='resnet50tp', dataset='mars', eval_step=50, evaluate=False, gamma=0.1, gpu_devices='0', height=224, htri_only=False, lr=0.0003, margin=0.3, max_epoch=800, num_instances=4, pool='avg', pretrained_model='/home/jiyang/Workspace/Works/video-person-reid/3dconv-person-reid/pretrained_models/resnet-50-kinetics.pth', print_freq=20, save_dir='log', seed=1, seq_len=4, start_epoch=0, stepsize=200, test_batch=1, train_batch=32, use_cpu=False, weight_decay=0.0005, width=112, workers=4)
+Args:Namespace(arch='resnet50tp', dataset='mars', eval_step=1, evaluate=False, gamma=0.1, gpu_devices='0', height=224, htri_only=False, lr=0.0003, margin=0.3, max_epoch=800, num_instances=4, pool='avg', pretrained_model='/home/jiyang/Workspace/Works/video-person-reid/3dconv-person-reid/pretrained_models/resnet-50-kinetics.pth', print_freq=20, save_dir='log', seed=1, seq_len=4, start_epoch=0, stepsize=200, test_batch=1, train_batch=32, use_cpu=False, weight_decay=0.0005, width=112, workers=4)
 ==========
 Currently using GPU 0
 Initializing dataset mars
@@ -18,10 +18,7 @@ Dataset statistics:
 Initializing model: resnet50tp
 Model size: 24.78866M
 ==> Epoch 1/800
-Batch 20/78	 Loss 10.194838 (9.589045)
-Batch 40/78	 Loss 8.882136 (9.578975)
-Batch 60/78	 Loss 7.545673 (9.152614)
-==> Epoch 2/800
-Batch 20/78	 Loss 6.756966 (6.884350)
-Batch 40/78	 Loss 6.844419 (6.846817)
-Batch 60/78	 Loss 6.585319 (6.827470)
+Batch 20/78	 Loss 9.787807 (9.421278)
+Batch 40/78	 Loss 9.147442 (9.504574)
+Batch 60/78	 Loss 7.716365 (9.179058)
+==> Test

@@ -45,7 +45,7 @@ class VideoDataset(Dataset):
             if num is smaller than seq_len, then replicate items.
             This sampling strategy is used in training phase.
             """
-            frame_indices = range(num)
+            frame_indices = list(range(num))
             rand_end = max(0, len(frame_indices) - self.seq_len - 1)
             begin_index = random.randint(0, rand_end)
             end_index = min(begin_index + self.seq_len, len(frame_indices))
@@ -76,7 +76,7 @@ class VideoDataset(Dataset):
             This sampling strategy is used in test phase.
             """
             cur_index=0
-            frame_indices = range(num)
+            frame_indices = list(range(num))
             indices_list=[]
             while num-cur_index > self.seq_len:
                 indices_list.append(frame_indices[cur_index:cur_index+self.seq_len])

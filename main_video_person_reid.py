@@ -226,7 +226,7 @@ def test(model, queryloader, galleryloader, pool, use_gpu, ranks=[1, 5, 10, 20])
         for batch_idx, (imgs, pids, camids) in enumerate(queryloader):
             if use_gpu:
                 imgs = imgs.cuda()
-            imgs = Variable(imgs, volatile=True)
+            # imgs = Variable(imgs, volatile=True)
             # b=1, n=number of clips, s=16
             b, n, s, c, h, w = imgs.size()
             assert(b==1)
@@ -248,7 +248,7 @@ def test(model, queryloader, galleryloader, pool, use_gpu, ranks=[1, 5, 10, 20])
         for batch_idx, (imgs, pids, camids) in enumerate(galleryloader):
             if use_gpu:
                 imgs = imgs.cuda()
-            imgs = Variable(imgs, volatile=True)
+            # imgs = Variable(imgs, volatile=True)
             b, n, s, c, h, w = imgs.size()
             imgs = imgs.view(b*n, s , c, h, w)
             assert(b==1)
