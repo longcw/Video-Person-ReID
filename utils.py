@@ -8,6 +8,7 @@ import os.path as osp
 
 import torch
 
+
 def mkdir_if_missing(directory):
     if not osp.exists(directory):
         try:
@@ -16,11 +17,13 @@ def mkdir_if_missing(directory):
             if e.errno != errno.EEXIST:
                 raise
 
+
 class AverageMeter(object):
     """Computes and stores the average and current value.
        
        Code imported from https://github.com/pytorch/examples/blob/master/imagenet/main.py#L247-L262
     """
+
     def __init__(self):
         self.reset()
 
@@ -36,17 +39,20 @@ class AverageMeter(object):
         self.count += n
         self.avg = self.sum / self.count
 
+
 def save_checkpoint(state, is_best, fpath='checkpoint.pth.tar'):
     mkdir_if_missing(osp.dirname(fpath))
     torch.save(state, fpath)
     if is_best:
         shutil.copy(fpath, osp.join(osp.dirname(fpath), 'best_model.pth.tar'))
 
+
 class Logger(object):
     """
     Write console output to external text file.
     Code imported from https://github.com/Cysu/open-reid/blob/master/reid/utils/logging.py.
     """
+
     def __init__(self, fpath=None):
         self.console = sys.stdout
         self.file = None
@@ -79,20 +85,14 @@ class Logger(object):
         if self.file is not None:
             self.file.close()
 
+
 def read_json(fpath):
     with open(fpath, 'r') as f:
         obj = json.load(f)
     return obj
 
+
 def write_json(obj, fpath):
     mkdir_if_missing(osp.dirname(fpath))
     with open(fpath, 'w') as f:
         json.dump(obj, f, indent=4, separators=(',', ': '))
-
-
-
-
-
-
-
-

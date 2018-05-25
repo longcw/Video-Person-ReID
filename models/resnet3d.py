@@ -107,7 +107,6 @@ class Bottleneck(nn.Module):
 
 
 class ResNet(nn.Module):
-
     def __init__(self,
                  block,
                  layers,
@@ -173,23 +172,23 @@ class ResNet(nn.Module):
             layers.append(block(self.inplanes, planes))
 
         return nn.Sequential(*layers)
-    
+
     def load_matched_state_dict(self, state_dict):
- 
+
         own_state = self.state_dict()
         for name, param in state_dict.items():
             if name not in own_state:
-                 continue
-            #if isinstance(param, Parameter):
+                continue
+                # if isinstance(param, Parameter):
                 # backwards compatibility for serialized parameters
             param = param.data
-            print("loading "+name)
+            print("loading " + name)
             own_state[name].copy_(param)
 
     def forward(self, x):
         # default size is (b, s, c, w, h), s for seq_len, c for channel
         # convert for 3d cnn, (b, c, s, w, h)
-        x=x.permute(0,2,1,3,4)
+        x = x.permute(0, 2, 1, 3, 4)
         x = self.conv1(x)
         x = self.bn1(x)
         x = self.relu(x)

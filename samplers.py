@@ -17,6 +17,7 @@ class RandomIdentitySampler(Sampler):
         data_source (Dataset): dataset to sample from.
         num_instances (int): number of instances per identity.
     """
+
     def __init__(self, data_source, num_instances=4):
         self.data_source = data_source
         self.num_instances = num_instances

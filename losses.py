@@ -12,6 +12,7 @@ Shorthands for loss:
 """
 __all__ = ['CrossEntropyLabelSmooth', 'TripletLoss', 'CenterLoss']
 
+
 class CrossEntropyLabelSmooth(nn.Module):
     """Cross entropy loss with label smoothing regularizer.
 
@@ -23,6 +24,7 @@ class CrossEntropyLabelSmooth(nn.Module):
         num_classes (int): number of classes.
         epsilon (float): weight.
     """
+
     def __init__(self, num_classes, epsilon=0.1, use_gpu=True):
         super(CrossEntropyLabelSmooth, self).__init__()
         self.num_classes = num_classes
@@ -44,6 +46,7 @@ class CrossEntropyLabelSmooth(nn.Module):
         loss = (- targets * log_probs).mean(0).sum()
         return loss
 
+
 class TripletLoss(nn.Module):
     """Triplet loss with hard positive/negative mining.
 
@@ -55,6 +58,7 @@ class TripletLoss(nn.Module):
     Args:
         margin (float): margin for triplet.
     """
+
     def __init__(self, margin=0.3):
         super(TripletLoss, self).__init__()
         self.margin = margin
@@ -85,6 +89,7 @@ class TripletLoss(nn.Module):
         loss = self.ranking_loss(dist_an, dist_ap, y)
         return loss
 
+
 class CenterLoss(nn.Module):
     """Center loss.
     
@@ -95,6 +100,7 @@ class CenterLoss(nn.Module):
         num_classes (int): number of classes.
         feat_dim (int): feature dimension.
     """
+
     def __init__(self, num_classes=10, feat_dim=2, use_gpu=True):
         super(CenterLoss, self).__init__()
         self.num_classes = num_classes
@@ -126,12 +132,13 @@ class CenterLoss(nn.Module):
         dist = []
         for i in range(batch_size):
             value = distmat[i][mask[i]]
-            value = value.clamp(min=1e-12, max=1e+12) # for numerical stability
+            value = value.clamp(min=1e-12, max=1e+12)  # for numerical stability
             dist.append(value)
         dist = torch.cat(dist)
         loss = dist.mean()
 
         return loss
+
 
 if __name__ == '__main__':
     pass
