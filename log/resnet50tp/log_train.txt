@@ -1,0 +1,3428 @@
+==========
+Args:Namespace(arch='resnet50tp', dataset='mars', eval_step=50, evaluate=False, gamma=0.1, gpu_devices='3', height=224, htri_only=False, lr=0.0003, margin=0.3, max_epoch=800, num_instances=4, pool='avg', pretrained_model='/home/jiyang/Workspace/Works/video-person-reid/3dconv-person-reid/pretrained_models/resnet-50-kinetics.pth', print_freq=20, save_dir='log', seed=1, seq_len=4, start_epoch=0, stepsize=200, test_batch=1, train_batch=32, use_cpu=False, weight_decay=0.0005, width=112, workers=4)
+==========
+Currently using GPU 3
+Initializing dataset mars
+=> MARS loaded
+Dataset statistics:
+  ------------------------------
+  subset   | # ids | # tracklets
+  ------------------------------
+  train    |   625 |     8298
+  query    |   626 |     1980
+  gallery  |   622 |     9330
+  ------------------------------
+  total    |  1251 |    19608
+  number of images per tracklet: 2 ~ 920, average 59.5
+  ------------------------------
+Initializing model: resnet50tp
+Model size: 24.78866M
+==> Epoch 1/800
+Batch 20/78	 Loss 9.715762 (9.182007)
+Batch 40/78	 Loss 8.529147 (9.359870)
+Batch 60/78	 Loss 7.700128 (8.921522)
+==> Epoch 2/800
+Batch 20/78	 Loss 6.818361 (6.868173)
+Batch 40/78	 Loss 6.680931 (6.837566)
+Batch 60/78	 Loss 6.723417 (6.822144)
+==> Epoch 3/800
+Batch 20/78	 Loss 6.745676 (6.713012)
+Batch 40/78	 Loss 6.843144 (6.715040)
+Batch 60/78	 Loss 6.684600 (6.725039)
+==> Epoch 4/800
+Batch 20/78	 Loss 6.720963 (6.675159)
+Batch 40/78	 Loss 6.621886 (6.653300)
+Batch 60/78	 Loss 6.768613 (6.665891)
+==> Epoch 5/800
+Batch 20/78	 Loss 6.498719 (6.580302)
+Batch 40/78	 Loss 6.773942 (6.610313)
+Batch 60/78	 Loss 6.697716 (6.619466)
+==> Epoch 6/800
+Batch 20/78	 Loss 6.485250 (6.588666)
+Batch 40/78	 Loss 6.629705 (6.589776)
+Batch 60/78	 Loss 6.784705 (6.608623)
+==> Epoch 7/800
+Batch 20/78	 Loss 6.609652 (6.568387)
+Batch 40/78	 Loss 6.528515 (6.551777)
+Batch 60/78	 Loss 6.686195 (6.571198)
+==> Epoch 8/800
+Batch 20/78	 Loss 6.516334 (6.520386)
+Batch 40/78	 Loss 6.563072 (6.530202)
+Batch 60/78	 Loss 6.559303 (6.546027)
+==> Epoch 9/800
+Batch 20/78	 Loss 6.253644 (6.388252)
+Batch 40/78	 Loss 6.681822 (6.461198)
+Batch 60/78	 Loss 6.389793 (6.484151)
+==> Epoch 10/800
+Batch 20/78	 Loss 6.374293 (6.401489)
+Batch 40/78	 Loss 6.367012 (6.440197)
+Batch 60/78	 Loss 6.465375 (6.461018)
+==> Epoch 11/800
+Batch 20/78	 Loss 6.536854 (6.286797)
+Batch 40/78	 Loss 6.234959 (6.326796)
+Batch 60/78	 Loss 6.648843 (6.398189)
+==> Epoch 12/800
+Batch 20/78	 Loss 5.765443 (6.169182)
+Batch 40/78	 Loss 6.145323 (6.156644)
+Batch 60/78	 Loss 6.572152 (6.258897)
+==> Epoch 13/800
+Batch 20/78	 Loss 5.840626 (6.066069)
+Batch 40/78	 Loss 6.519598 (6.053848)
+Batch 60/78	 Loss 6.399459 (6.134845)
+==> Epoch 14/800
+Batch 20/78	 Loss 5.671768 (5.842548)
+Batch 40/78	 Loss 6.740644 (5.919386)
+Batch 60/78	 Loss 6.010108 (5.973750)
+==> Epoch 15/800
+Batch 20/78	 Loss 5.593077 (5.610002)
+Batch 40/78	 Loss 5.634007 (5.670807)
+Batch 60/78	 Loss 6.427482 (5.741599)
+==> Epoch 16/800
+Batch 20/78	 Loss 4.762703 (5.258016)
+Batch 40/78	 Loss 6.102319 (5.473265)
+Batch 60/78	 Loss 6.066731 (5.512155)
+==> Epoch 17/800
+Batch 20/78	 Loss 5.070927 (4.912237)
+Batch 40/78	 Loss 6.182160 (5.144601)
+Batch 60/78	 Loss 6.525618 (5.302716)
+==> Epoch 18/800
+Batch 20/78	 Loss 4.947505 (5.130464)
+Batch 40/78	 Loss 4.693733 (5.058043)
+Batch 60/78	 Loss 5.514114 (5.132336)
+==> Epoch 19/800
+Batch 20/78	 Loss 5.066063 (4.637668)
+Batch 40/78	 Loss 4.779171 (4.806755)
+Batch 60/78	 Loss 5.448828 (4.891288)
+==> Epoch 20/800
+Batch 20/78	 Loss 4.346545 (4.482631)
+Batch 40/78	 Loss 4.969059 (4.486317)
+Batch 60/78	 Loss 5.682145 (4.656060)
+==> Epoch 21/800
+Batch 20/78	 Loss 4.047942 (4.194660)
+Batch 40/78	 Loss 4.805860 (4.306826)
+Batch 60/78	 Loss 4.194691 (4.394436)
+==> Epoch 22/800
+Batch 20/78	 Loss 3.286666 (3.856230)
+Batch 40/78	 Loss 4.852462 (3.982693)
+Batch 60/78	 Loss 4.811015 (4.205631)
+==> Epoch 23/800
+Batch 20/78	 Loss 3.368969 (3.878742)
+Batch 40/78	 Loss 3.906897 (3.901106)
+Batch 60/78	 Loss 3.649895 (3.979039)
+==> Epoch 24/800
+Batch 20/78	 Loss 4.014645 (3.453300)
+Batch 40/78	 Loss 4.144512 (3.758846)
+Batch 60/78	 Loss 4.078890 (3.849120)
+==> Epoch 25/800
+Batch 20/78	 Loss 3.214741 (3.678771)
+Batch 40/78	 Loss 4.469698 (3.830914)
+Batch 60/78	 Loss 5.193802 (3.909500)
+==> Epoch 26/800
+Batch 20/78	 Loss 3.687964 (3.443753)
+Batch 40/78	 Loss 3.477899 (3.405134)
+Batch 60/78	 Loss 3.212598 (3.433128)
+==> Epoch 27/800
+Batch 20/78	 Loss 2.583032 (3.050490)
+Batch 40/78	 Loss 4.588188 (3.359067)
+Batch 60/78	 Loss 4.117877 (3.433220)
+==> Epoch 28/800
+Batch 20/78	 Loss 3.282383 (3.064534)
+Batch 40/78	 Loss 4.722414 (3.367412)
+Batch 60/78	 Loss 3.869915 (3.433592)
+==> Epoch 29/800
+Batch 20/78	 Loss 2.550276 (3.356919)
+Batch 40/78	 Loss 3.828060 (3.277263)
+Batch 60/78	 Loss 3.293566 (3.383251)
+==> Epoch 30/800
+Batch 20/78	 Loss 3.285767 (3.193397)
+Batch 40/78	 Loss 2.759917 (3.215729)
+Batch 60/78	 Loss 3.175289 (3.308524)
+==> Epoch 31/800
+Batch 20/78	 Loss 2.492204 (2.888020)
+Batch 40/78	 Loss 2.991595 (2.969369)
+Batch 60/78	 Loss 2.400639 (3.020300)
+==> Epoch 32/800
+Batch 20/78	 Loss 3.280352 (2.946879)
+Batch 40/78	 Loss 2.535000 (3.061600)
+Batch 60/78	 Loss 2.836707 (3.015580)
+==> Epoch 33/800
+Batch 20/78	 Loss 2.462028 (2.662163)
+Batch 40/78	 Loss 3.051088 (2.743371)
+Batch 60/78	 Loss 3.833960 (2.859992)
+==> Epoch 34/800
+Batch 20/78	 Loss 4.432947 (2.651713)
+Batch 40/78	 Loss 3.370893 (2.782393)
+Batch 60/78	 Loss 3.023749 (2.809818)
+==> Epoch 35/800
+Batch 20/78	 Loss 2.265988 (2.618406)
+Batch 40/78	 Loss 2.208839 (2.712155)
+Batch 60/78	 Loss 3.094447 (2.807373)
+==> Epoch 36/800
+Batch 20/78	 Loss 3.251865 (2.720936)
+Batch 40/78	 Loss 3.983208 (2.857520)
+Batch 60/78	 Loss 3.649925 (2.899464)
+==> Epoch 37/800
+Batch 20/78	 Loss 2.301692 (2.611619)
+Batch 40/78	 Loss 2.719759 (2.586183)
+Batch 60/78	 Loss 2.616187 (2.621161)
+==> Epoch 38/800
+Batch 20/78	 Loss 2.536096 (2.422989)
+Batch 40/78	 Loss 3.249680 (2.597289)
+Batch 60/78	 Loss 2.779046 (2.630899)
+==> Epoch 39/800
+Batch 20/78	 Loss 2.585373 (2.426449)
+Batch 40/78	 Loss 2.476434 (2.457253)
+Batch 60/78	 Loss 3.535300 (2.531301)
+==> Epoch 40/800
+Batch 20/78	 Loss 3.175365 (2.465137)
+Batch 40/78	 Loss 3.088341 (2.536180)
+Batch 60/78	 Loss 2.901964 (2.556260)
+==> Epoch 41/800
+Batch 20/78	 Loss 2.253608 (2.198745)
+Batch 40/78	 Loss 2.309511 (2.309957)
+Batch 60/78	 Loss 2.318207 (2.365032)
+==> Epoch 42/800
+Batch 20/78	 Loss 3.298548 (2.383452)
+Batch 40/78	 Loss 3.150301 (2.477768)
+Batch 60/78	 Loss 2.571605 (2.493058)
+==> Epoch 43/800
+Batch 20/78	 Loss 2.366379 (2.483331)
+Batch 40/78	 Loss 1.957009 (2.493826)
+Batch 60/78	 Loss 2.933317 (2.538299)
+==> Epoch 44/800
+Batch 20/78	 Loss 2.147369 (2.362169)
+Batch 40/78	 Loss 2.301548 (2.396314)
+Batch 60/78	 Loss 2.325556 (2.451660)
+==> Epoch 45/800
+Batch 20/78	 Loss 1.863094 (2.011931)
+Batch 40/78	 Loss 2.252519 (2.231521)
+Batch 60/78	 Loss 3.156484 (2.339964)
+==> Epoch 46/800
+Batch 20/78	 Loss 2.258406 (2.321723)
+Batch 40/78	 Loss 2.120389 (2.332284)
+Batch 60/78	 Loss 2.013338 (2.373902)
+==> Epoch 47/800
+Batch 20/78	 Loss 1.968523 (2.117289)
+Batch 40/78	 Loss 2.156016 (2.159565)
+Batch 60/78	 Loss 2.044287 (2.182467)
+==> Epoch 48/800
+Batch 20/78	 Loss 2.211123 (2.279269)
+Batch 40/78	 Loss 2.238640 (2.273838)
+Batch 60/78	 Loss 2.521472 (2.315516)
+==> Epoch 49/800
+Batch 20/78	 Loss 1.954657 (2.047673)
+Batch 40/78	 Loss 2.131450 (2.179546)
+Batch 60/78	 Loss 2.048259 (2.234252)
+==> Epoch 50/800
+Batch 20/78	 Loss 2.650391 (1.993116)
+Batch 40/78	 Loss 2.542703 (2.011123)
+Batch 60/78	 Loss 2.072255 (2.093643)
+==> Test
+Extracted features for query set, obtained 1980-by-2048 matrix
+Extracted features for gallery set, obtained 9330-by-2048 matrix
+Computing distance matrix
+Computing CMC and mAP
+Results ----------
+mAP: 58.5%
+CMC curve
+Rank-1  : 68.5%
+Rank-5  : 86.0%
+Rank-10 : 90.2%
+Rank-20 : 93.4%
+------------------
+==> Epoch 51/800
+Batch 20/78	 Loss 1.984097 (2.042227)
+Batch 40/78	 Loss 2.641531 (2.185459)
+Batch 60/78	 Loss 1.946173 (2.262729)
+==> Epoch 52/800
+Batch 20/78	 Loss 1.871622 (2.006279)
+Batch 40/78	 Loss 2.179672 (2.027968)
+Batch 60/78	 Loss 2.576815 (2.085290)
+==> Epoch 53/800
+Batch 20/78	 Loss 1.946906 (1.984693)
+Batch 40/78	 Loss 2.445645 (2.132810)
+Batch 60/78	 Loss 2.201023 (2.160220)
+==> Epoch 54/800
+Batch 20/78	 Loss 2.074234 (1.938063)
+Batch 40/78	 Loss 2.072239 (2.068319)
+Batch 60/78	 Loss 2.056722 (2.065551)
+==> Epoch 55/800
+Batch 20/78	 Loss 2.206496 (2.063574)
+Batch 40/78	 Loss 2.002460 (2.079360)
+Batch 60/78	 Loss 1.978448 (2.087946)
+==> Epoch 56/800
+Batch 20/78	 Loss 2.100886 (2.084834)
+Batch 40/78	 Loss 1.974815 (2.131554)
+Batch 60/78	 Loss 2.462533 (2.188306)
+==> Epoch 57/800
+Batch 20/78	 Loss 1.999642 (1.942171)
+Batch 40/78	 Loss 1.933017 (1.937359)
+Batch 60/78	 Loss 2.429393 (1.974210)
+==> Epoch 58/800
+Batch 20/78	 Loss 2.017511 (1.962040)
+Batch 40/78	 Loss 2.156895 (2.055337)
+Batch 60/78	 Loss 1.961978 (2.068815)
+==> Epoch 59/800
+Batch 20/78	 Loss 1.664873 (1.798258)
+Batch 40/78	 Loss 2.472081 (1.918867)
+Batch 60/78	 Loss 1.956675 (1.976901)
+==> Epoch 60/800
+Batch 20/78	 Loss 1.564327 (1.951700)
+Batch 40/78	 Loss 1.944961 (1.965276)
+Batch 60/78	 Loss 2.655018 (2.017852)
+==> Epoch 61/800
+Batch 20/78	 Loss 1.720978 (1.833592)
+Batch 40/78	 Loss 1.718484 (1.911222)
+Batch 60/78	 Loss 2.020211 (1.936418)
+==> Epoch 62/800
+Batch 20/78	 Loss 1.683926 (1.941572)
+Batch 40/78	 Loss 2.313528 (1.998259)
+Batch 60/78	 Loss 2.006994 (2.019804)
+==> Epoch 63/800
+Batch 20/78	 Loss 1.834060 (1.867987)
+Batch 40/78	 Loss 2.108336 (1.901936)
+Batch 60/78	 Loss 2.075547 (1.938663)
+==> Epoch 64/800
+Batch 20/78	 Loss 1.850119 (1.827900)
+Batch 40/78	 Loss 1.619214 (1.941346)
+Batch 60/78	 Loss 1.956169 (1.989009)
+==> Epoch 65/800
+Batch 20/78	 Loss 1.689173 (1.884984)
+Batch 40/78	 Loss 2.001197 (1.891488)
+Batch 60/78	 Loss 2.032608 (1.958348)
+==> Epoch 66/800
+Batch 20/78	 Loss 1.594957 (1.805501)
+Batch 40/78	 Loss 2.972083 (1.946992)
+Batch 60/78	 Loss 2.030607 (2.034975)
+==> Epoch 67/800
+Batch 20/78	 Loss 1.614823 (1.835170)
+Batch 40/78	 Loss 2.475956 (1.939838)
+Batch 60/78	 Loss 2.326089 (2.004641)
+==> Epoch 68/800
+Batch 20/78	 Loss 1.726236 (1.990577)
+Batch 40/78	 Loss 1.721941 (1.987331)
+Batch 60/78	 Loss 1.790789 (1.974043)
+==> Epoch 69/800
+Batch 20/78	 Loss 1.821833 (1.818763)
+Batch 40/78	 Loss 1.796857 (1.909283)
+Batch 60/78	 Loss 1.906097 (1.953853)
+==> Epoch 70/800
+Batch 20/78	 Loss 1.491962 (1.788672)
+Batch 40/78	 Loss 2.202712 (1.823555)
+Batch 60/78	 Loss 2.155152 (1.901782)
+==> Epoch 71/800
+Batch 20/78	 Loss 2.326831 (1.827895)
+Batch 40/78	 Loss 2.418643 (1.861351)
+Batch 60/78	 Loss 1.696757 (1.940635)
+==> Epoch 72/800
+Batch 20/78	 Loss 1.750999 (1.841298)
+Batch 40/78	 Loss 1.656673 (1.854270)
+Batch 60/78	 Loss 1.771702 (1.843794)
+==> Epoch 73/800
+Batch 20/78	 Loss 1.791978 (1.730879)
+Batch 40/78	 Loss 1.654327 (1.809221)
+Batch 60/78	 Loss 2.363946 (1.872078)
+==> Epoch 74/800
+Batch 20/78	 Loss 2.516650 (1.944841)
+Batch 40/78	 Loss 1.601494 (1.914057)
+Batch 60/78	 Loss 1.756629 (1.920469)
+==> Epoch 75/800
+Batch 20/78	 Loss 1.612678 (1.802476)
+Batch 40/78	 Loss 1.718399 (1.799865)
+Batch 60/78	 Loss 1.483616 (1.832828)
+==> Epoch 76/800
+Batch 20/78	 Loss 1.638420 (1.724640)
+Batch 40/78	 Loss 1.673943 (1.791823)
+Batch 60/78	 Loss 1.692488 (1.801148)
+==> Epoch 77/800
+Batch 20/78	 Loss 1.548436 (1.771855)
+Batch 40/78	 Loss 1.823926 (1.806163)
+Batch 60/78	 Loss 1.507336 (1.845955)
+==> Epoch 78/800
+Batch 20/78	 Loss 2.475824 (1.739447)
+Batch 40/78	 Loss 1.697839 (1.728936)
+Batch 60/78	 Loss 2.092042 (1.764781)
+==> Epoch 79/800
+Batch 20/78	 Loss 1.960931 (1.967426)
+Batch 40/78	 Loss 1.760773 (1.923904)
+Batch 60/78	 Loss 2.030340 (1.892255)
+==> Epoch 80/800
+Batch 20/78	 Loss 2.049472 (1.759811)
+Batch 40/78	 Loss 2.070746 (1.798205)
+Batch 60/78	 Loss 3.119800 (1.858896)
+==> Epoch 81/800
+Batch 20/78	 Loss 1.898991 (1.718226)
+Batch 40/78	 Loss 1.807284 (1.792914)
+Batch 60/78	 Loss 1.743182 (1.841646)
+==> Epoch 82/800
+Batch 20/78	 Loss 1.650248 (1.740346)
+Batch 40/78	 Loss 1.775354 (1.785626)
+Batch 60/78	 Loss 2.657407 (1.874693)
+==> Epoch 83/800
+Batch 20/78	 Loss 1.773358 (1.669638)
+Batch 40/78	 Loss 2.005889 (1.725231)
+Batch 60/78	 Loss 1.722042 (1.762714)
+==> Epoch 84/800
+Batch 20/78	 Loss 1.766069 (1.657023)
+Batch 40/78	 Loss 2.019347 (1.740899)
+Batch 60/78	 Loss 1.493840 (1.768204)
+==> Epoch 85/800
+Batch 20/78	 Loss 1.853164 (1.864321)
+Batch 40/78	 Loss 1.748748 (1.951301)
+Batch 60/78	 Loss 1.788605 (1.950265)
+==> Epoch 86/800
+Batch 20/78	 Loss 1.542827 (1.796639)
+Batch 40/78	 Loss 2.432740 (1.849704)
+Batch 60/78	 Loss 1.946810 (1.901521)
+==> Epoch 87/800
+Batch 20/78	 Loss 1.786137 (1.839107)
+Batch 40/78	 Loss 1.897822 (1.807855)
+Batch 60/78	 Loss 1.619812 (1.800775)
+==> Epoch 88/800
+Batch 20/78	 Loss 2.479695 (1.728991)
+Batch 40/78	 Loss 2.204210 (1.756053)
+Batch 60/78	 Loss 1.826958 (1.802849)
+==> Epoch 89/800
+Batch 20/78	 Loss 1.599380 (1.706739)
+Batch 40/78	 Loss 1.664013 (1.736756)
+Batch 60/78	 Loss 1.866747 (1.764743)
+==> Epoch 90/800
+Batch 20/78	 Loss 1.621809 (1.669328)
+Batch 40/78	 Loss 1.837808 (1.685385)
+Batch 60/78	 Loss 2.246603 (1.716995)
+==> Epoch 91/800
+Batch 20/78	 Loss 1.891651 (1.783921)
+Batch 40/78	 Loss 2.037325 (1.847157)
+Batch 60/78	 Loss 1.562037 (1.834050)
+==> Epoch 92/800
+Batch 20/78	 Loss 1.365567 (1.708115)
+Batch 40/78	 Loss 2.127247 (1.725735)
+Batch 60/78	 Loss 1.711757 (1.759828)
+==> Epoch 93/800
+Batch 20/78	 Loss 1.481943 (1.625037)
+Batch 40/78	 Loss 1.684593 (1.659337)
+Batch 60/78	 Loss 1.505336 (1.692818)
+==> Epoch 94/800
+Batch 20/78	 Loss 1.751044 (1.687277)
+Batch 40/78	 Loss 1.695580 (1.722876)
+Batch 60/78	 Loss 2.002813 (1.706324)
+==> Epoch 95/800
+Batch 20/78	 Loss 1.519055 (1.634122)
+Batch 40/78	 Loss 1.416321 (1.653064)
+Batch 60/78	 Loss 1.728362 (1.657834)
+==> Epoch 96/800
+Batch 20/78	 Loss 1.635593 (1.645820)
+Batch 40/78	 Loss 1.477743 (1.651780)
+Batch 60/78	 Loss 1.417668 (1.667804)
+==> Epoch 97/800
+Batch 20/78	 Loss 1.556534 (1.660143)
+Batch 40/78	 Loss 1.596468 (1.737687)
+Batch 60/78	 Loss 1.737709 (1.764844)
+==> Epoch 98/800
+Batch 20/78	 Loss 1.707956 (1.598643)
+Batch 40/78	 Loss 1.734162 (1.689074)
+Batch 60/78	 Loss 1.535747 (1.693642)
+==> Epoch 99/800
+Batch 20/78	 Loss 2.245826 (1.596832)
+Batch 40/78	 Loss 1.407580 (1.651517)
+Batch 60/78	 Loss 1.561278 (1.650027)
+==> Epoch 100/800
+Batch 20/78	 Loss 1.565419 (1.612601)
+Batch 40/78	 Loss 2.063959 (1.658492)
+Batch 60/78	 Loss 1.843989 (1.727711)
+==> Test
+Extracted features for query set, obtained 1980-by-2048 matrix
+Extracted features for gallery set, obtained 9330-by-2048 matrix
+Computing distance matrix
+Computing CMC and mAP
+Results ----------
+mAP: 62.3%
+CMC curve
+Rank-1  : 73.2%
+Rank-5  : 86.8%
+Rank-10 : 90.5%
+Rank-20 : 93.4%
+------------------
+==> Epoch 101/800
+Batch 20/78	 Loss 2.068071 (1.688391)
+Batch 40/78	 Loss 1.762398 (1.730364)
+Batch 60/78	 Loss 1.572175 (1.727745)
+==> Epoch 102/800
+Batch 20/78	 Loss 1.402177 (1.650417)
+Batch 40/78	 Loss 1.716491 (1.743723)
+Batch 60/78	 Loss 2.075056 (1.809875)
+==> Epoch 103/800
+Batch 20/78	 Loss 1.993926 (1.808838)
+Batch 40/78	 Loss 1.614981 (1.797870)
+Batch 60/78	 Loss 1.462020 (1.818216)
+==> Epoch 104/800
+Batch 20/78	 Loss 1.729983 (1.681550)
+Batch 40/78	 Loss 1.473777 (1.692324)
+Batch 60/78	 Loss 1.604393 (1.698090)
+==> Epoch 105/800
+Batch 20/78	 Loss 1.586820 (1.643240)
+Batch 40/78	 Loss 1.875978 (1.666782)
+Batch 60/78	 Loss 1.598163 (1.728159)
+==> Epoch 106/800
+Batch 20/78	 Loss 1.420094 (1.651750)
+Batch 40/78	 Loss 1.543669 (1.661321)
+Batch 60/78	 Loss 1.546514 (1.706551)
+==> Epoch 107/800
+Batch 20/78	 Loss 1.517624 (1.580689)
+Batch 40/78	 Loss 2.441972 (1.726834)
+Batch 60/78	 Loss 1.726565 (1.742198)
+==> Epoch 108/800
+Batch 20/78	 Loss 2.066296 (1.614752)
+Batch 40/78	 Loss 1.582706 (1.650753)
+Batch 60/78	 Loss 1.830331 (1.702463)
+==> Epoch 109/800
+Batch 20/78	 Loss 1.479380 (1.589720)
+Batch 40/78	 Loss 1.615119 (1.605833)
+Batch 60/78	 Loss 1.512085 (1.652572)
+==> Epoch 110/800
+Batch 20/78	 Loss 1.656342 (1.632219)
+Batch 40/78	 Loss 1.747478 (1.662359)
+Batch 60/78	 Loss 2.031923 (1.673696)
+==> Epoch 111/800
+Batch 20/78	 Loss 1.616697 (1.498069)
+Batch 40/78	 Loss 1.593091 (1.610128)
+Batch 60/78	 Loss 1.519934 (1.605885)
+==> Epoch 112/800
+Batch 20/78	 Loss 1.369799 (1.526111)
+Batch 40/78	 Loss 1.472705 (1.586561)
+Batch 60/78	 Loss 1.987430 (1.622792)
+==> Epoch 113/800
+Batch 20/78	 Loss 1.631488 (1.640080)
+Batch 40/78	 Loss 1.476890 (1.640611)
+Batch 60/78	 Loss 2.231487 (1.658398)
+==> Epoch 114/800
+Batch 20/78	 Loss 1.850136 (1.554962)
+Batch 40/78	 Loss 1.806659 (1.614425)
+Batch 60/78	 Loss 1.499847 (1.640949)
+==> Epoch 115/800
+Batch 20/78	 Loss 1.505674 (1.571271)
+Batch 40/78	 Loss 1.660713 (1.580502)
+Batch 60/78	 Loss 1.534201 (1.601221)
+==> Epoch 116/800
+Batch 20/78	 Loss 1.712554 (1.521853)
+Batch 40/78	 Loss 2.334770 (1.570079)
+Batch 60/78	 Loss 1.485360 (1.623209)
+==> Epoch 117/800
+Batch 20/78	 Loss 1.606004 (1.519329)
+Batch 40/78	 Loss 1.911419 (1.605140)
+Batch 60/78	 Loss 1.792719 (1.611311)
+==> Epoch 118/800
+Batch 20/78	 Loss 1.753453 (1.509535)
+Batch 40/78	 Loss 1.388041 (1.539249)
+Batch 60/78	 Loss 1.717605 (1.613826)
+==> Epoch 119/800
+Batch 20/78	 Loss 1.696604 (1.629440)
+Batch 40/78	 Loss 1.497562 (1.660245)
+Batch 60/78	 Loss 1.747829 (1.680156)
+==> Epoch 120/800
+Batch 20/78	 Loss 1.599032 (1.658539)
+Batch 40/78	 Loss 1.545511 (1.651805)
+Batch 60/78	 Loss 1.525639 (1.640213)
+==> Epoch 121/800
+Batch 20/78	 Loss 1.331026 (1.521321)
+Batch 40/78	 Loss 1.381658 (1.587192)
+Batch 60/78	 Loss 1.383742 (1.597100)
+==> Epoch 122/800
+Batch 20/78	 Loss 1.567028 (1.567202)
+Batch 40/78	 Loss 1.448138 (1.561568)
+Batch 60/78	 Loss 1.790300 (1.577671)
+==> Epoch 123/800
+Batch 20/78	 Loss 2.544711 (1.553346)
+Batch 40/78	 Loss 1.478374 (1.552427)
+Batch 60/78	 Loss 1.547269 (1.596608)
+==> Epoch 124/800
+Batch 20/78	 Loss 1.499330 (1.611369)
+Batch 40/78	 Loss 1.770460 (1.634092)
+Batch 60/78	 Loss 1.626205 (1.671050)
+==> Epoch 125/800
+Batch 20/78	 Loss 1.412089 (1.631703)
+Batch 40/78	 Loss 2.007477 (1.645994)
+Batch 60/78	 Loss 1.670221 (1.656092)
+==> Epoch 126/800
+Batch 20/78	 Loss 1.390725 (1.542814)
+Batch 40/78	 Loss 2.520943 (1.607130)
+Batch 60/78	 Loss 1.829846 (1.621678)
+==> Epoch 127/800
+Batch 20/78	 Loss 1.525912 (1.645745)
+Batch 40/78	 Loss 1.578348 (1.684419)
+Batch 60/78	 Loss 1.745466 (1.714024)
+==> Epoch 128/800
+Batch 20/78	 Loss 1.354035 (1.500628)
+Batch 40/78	 Loss 1.451876 (1.562436)
+Batch 60/78	 Loss 1.576147 (1.601082)
+==> Epoch 129/800
+Batch 20/78	 Loss 1.918149 (1.691012)
+Batch 40/78	 Loss 1.623690 (1.637531)
+Batch 60/78	 Loss 1.604177 (1.646285)
+==> Epoch 130/800
+Batch 20/78	 Loss 1.461879 (1.585331)
+Batch 40/78	 Loss 1.695564 (1.586137)
+Batch 60/78	 Loss 1.536725 (1.629955)
+==> Epoch 131/800
+Batch 20/78	 Loss 1.507114 (1.617549)
+Batch 40/78	 Loss 1.837143 (1.656701)
+Batch 60/78	 Loss 1.751368 (1.644258)
+==> Epoch 132/800
+Batch 20/78	 Loss 1.843269 (1.640592)
+Batch 40/78	 Loss 1.538815 (1.637351)
+Batch 60/78	 Loss 1.549098 (1.632676)
+==> Epoch 133/800
+Batch 20/78	 Loss 1.590766 (1.509001)
+Batch 40/78	 Loss 1.483653 (1.560274)
+Batch 60/78	 Loss 2.158050 (1.581378)
+==> Epoch 134/800
+Batch 20/78	 Loss 1.406170 (1.489762)
+Batch 40/78	 Loss 1.360002 (1.537405)
+Batch 60/78	 Loss 2.169927 (1.593142)
+==> Epoch 135/800
+Batch 20/78	 Loss 1.321312 (1.575911)
+Batch 40/78	 Loss 1.389427 (1.593257)
+Batch 60/78	 Loss 1.406663 (1.580263)
+==> Epoch 136/800
+Batch 20/78	 Loss 1.672497 (1.421980)
+Batch 40/78	 Loss 1.782656 (1.460576)
+Batch 60/78	 Loss 1.318833 (1.503189)
+==> Epoch 137/800
+Batch 20/78	 Loss 1.611900 (1.432823)
+Batch 40/78	 Loss 1.690459 (1.511896)
+Batch 60/78	 Loss 1.791322 (1.553772)
+==> Epoch 138/800
+Batch 20/78	 Loss 1.350153 (1.459816)
+Batch 40/78	 Loss 1.611093 (1.503660)
+Batch 60/78	 Loss 1.404962 (1.511700)
+==> Epoch 139/800
+Batch 20/78	 Loss 1.457799 (1.535629)
+Batch 40/78	 Loss 1.463310 (1.527058)
+Batch 60/78	 Loss 1.666836 (1.530583)
+==> Epoch 140/800
+Batch 20/78	 Loss 1.451042 (1.529191)
+Batch 40/78	 Loss 1.503556 (1.590288)
+Batch 60/78	 Loss 1.723958 (1.626353)
+==> Epoch 141/800
+Batch 20/78	 Loss 1.534252 (1.528122)
+Batch 40/78	 Loss 1.420939 (1.504664)
+Batch 60/78	 Loss 1.575259 (1.519828)
+==> Epoch 142/800
+Batch 20/78	 Loss 1.429841 (1.473380)
+Batch 40/78	 Loss 1.559859 (1.546282)
+Batch 60/78	 Loss 1.649324 (1.591696)
+==> Epoch 143/800
+Batch 20/78	 Loss 1.444666 (1.491673)
+Batch 40/78	 Loss 1.348767 (1.519189)
+Batch 60/78	 Loss 1.347433 (1.527159)
+==> Epoch 144/800
+Batch 20/78	 Loss 1.542365 (1.449084)
+Batch 40/78	 Loss 1.407174 (1.472214)
+Batch 60/78	 Loss 1.447756 (1.534065)
+==> Epoch 145/800
+Batch 20/78	 Loss 1.361585 (1.465915)
+Batch 40/78	 Loss 1.710490 (1.491811)
+Batch 60/78	 Loss 1.740062 (1.521477)
+==> Epoch 146/800
+Batch 20/78	 Loss 1.439939 (1.544094)
+Batch 40/78	 Loss 1.814810 (1.555957)
+Batch 60/78	 Loss 1.395323 (1.583999)
+==> Epoch 147/800
+Batch 20/78	 Loss 1.902391 (1.544278)
+Batch 40/78	 Loss 1.854146 (1.567051)
+Batch 60/78	 Loss 2.185224 (1.609901)
+==> Epoch 148/800
+Batch 20/78	 Loss 1.562860 (1.482563)
+Batch 40/78	 Loss 1.506651 (1.519509)
+Batch 60/78	 Loss 1.643741 (1.518870)
+==> Epoch 149/800
+Batch 20/78	 Loss 1.405773 (1.485449)
+Batch 40/78	 Loss 1.655496 (1.523682)
+Batch 60/78	 Loss 1.635059 (1.555140)
+==> Epoch 150/800
+Batch 20/78	 Loss 1.455960 (1.507210)
+Batch 40/78	 Loss 1.443548 (1.500692)
+Batch 60/78	 Loss 1.592093 (1.527542)
+==> Test
+Extracted features for query set, obtained 1980-by-2048 matrix
+Extracted features for gallery set, obtained 9330-by-2048 matrix
+Computing distance matrix
+Computing CMC and mAP
+Results ----------
+mAP: 68.4%
+CMC curve
+Rank-1  : 76.7%
+Rank-5  : 90.6%
+Rank-10 : 93.4%
+Rank-20 : 95.4%
+------------------
+==> Epoch 151/800
+Batch 20/78	 Loss 1.560843 (1.449979)
+Batch 40/78	 Loss 1.407733 (1.449676)
+Batch 60/78	 Loss 1.667237 (1.473302)
+==> Epoch 152/800
+Batch 20/78	 Loss 1.798331 (1.427206)
+Batch 40/78	 Loss 1.630553 (1.450185)
+Batch 60/78	 Loss 1.489807 (1.486620)
+==> Epoch 153/800
+Batch 20/78	 Loss 1.645463 (1.500179)
+Batch 40/78	 Loss 1.610353 (1.547704)
+Batch 60/78	 Loss 1.568241 (1.622643)
+==> Epoch 154/800
+Batch 20/78	 Loss 1.821210 (1.602034)
+Batch 40/78	 Loss 1.634770 (1.635076)
+Batch 60/78	 Loss 1.682458 (1.657138)
+==> Epoch 155/800
+Batch 20/78	 Loss 1.508809 (1.504612)
+Batch 40/78	 Loss 1.541258 (1.507463)
+Batch 60/78	 Loss 1.622512 (1.546669)
+==> Epoch 156/800
+Batch 20/78	 Loss 1.494681 (1.478871)
+Batch 40/78	 Loss 1.454100 (1.499785)
+Batch 60/78	 Loss 1.372260 (1.492137)
+==> Epoch 157/800
+Batch 20/78	 Loss 1.547278 (1.480653)
+Batch 40/78	 Loss 1.538321 (1.521690)
+Batch 60/78	 Loss 2.258532 (1.573967)
+==> Epoch 158/800
+Batch 20/78	 Loss 1.553126 (1.493430)
+Batch 40/78	 Loss 1.569825 (1.515609)
+Batch 60/78	 Loss 1.758474 (1.537423)
+==> Epoch 159/800
+Batch 20/78	 Loss 1.475042 (1.431878)
+Batch 40/78	 Loss 1.541099 (1.472210)
+Batch 60/78	 Loss 1.394602 (1.473266)
+==> Epoch 160/800
+Batch 20/78	 Loss 1.574823 (1.430074)
+Batch 40/78	 Loss 1.454972 (1.479685)
+Batch 60/78	 Loss 1.631305 (1.519622)
+==> Epoch 161/800
+Batch 20/78	 Loss 1.425913 (1.481711)
+Batch 40/78	 Loss 1.464792 (1.518657)
+Batch 60/78	 Loss 1.449997 (1.559306)
+==> Epoch 162/800
+Batch 20/78	 Loss 1.782338 (1.535016)
+Batch 40/78	 Loss 1.475452 (1.563735)
+Batch 60/78	 Loss 1.555359 (1.587188)
+==> Epoch 163/800
+Batch 20/78	 Loss 1.620250 (1.516609)
+Batch 40/78	 Loss 2.083652 (1.524130)
+Batch 60/78	 Loss 1.592226 (1.531479)
+==> Epoch 164/800
+Batch 20/78	 Loss 1.397398 (1.516222)
+Batch 40/78	 Loss 1.616968 (1.553669)
+Batch 60/78	 Loss 1.390924 (1.556759)
+==> Epoch 165/800
+Batch 20/78	 Loss 1.676451 (1.480755)
+Batch 40/78	 Loss 1.509919 (1.506775)
+Batch 60/78	 Loss 1.434331 (1.539453)
+==> Epoch 166/800
+Batch 20/78	 Loss 1.513157 (1.493796)
+Batch 40/78	 Loss 1.364066 (1.476554)
+Batch 60/78	 Loss 1.371340 (1.503453)
+==> Epoch 167/800
+Batch 20/78	 Loss 1.435437 (1.440372)
+Batch 40/78	 Loss 1.332435 (1.502555)
+Batch 60/78	 Loss 1.498222 (1.499037)
+==> Epoch 168/800
+Batch 20/78	 Loss 1.483257 (1.409417)
+Batch 40/78	 Loss 1.405848 (1.453197)
+Batch 60/78	 Loss 1.551504 (1.466382)
+==> Epoch 169/800
+Batch 20/78	 Loss 1.420283 (1.388536)
+Batch 40/78	 Loss 1.361453 (1.437249)
+Batch 60/78	 Loss 1.438558 (1.493797)
+==> Epoch 170/800
+Batch 20/78	 Loss 1.730222 (1.425013)
+Batch 40/78	 Loss 1.599194 (1.452908)
+Batch 60/78	 Loss 1.502247 (1.491449)
+==> Epoch 171/800
+Batch 20/78	 Loss 1.545894 (1.491740)
+Batch 40/78	 Loss 1.395917 (1.507607)
+Batch 60/78	 Loss 1.343479 (1.508764)
+==> Epoch 172/800
+Batch 20/78	 Loss 1.399168 (1.366924)
+Batch 40/78	 Loss 1.588605 (1.413668)
+Batch 60/78	 Loss 1.444895 (1.427412)
+==> Epoch 173/800
+Batch 20/78	 Loss 1.721961 (1.471182)
+Batch 40/78	 Loss 1.293843 (1.469323)
+Batch 60/78	 Loss 1.406053 (1.480338)
+==> Epoch 174/800
+Batch 20/78	 Loss 1.391384 (1.473111)
+Batch 40/78	 Loss 1.482498 (1.488482)
+Batch 60/78	 Loss 1.415361 (1.511666)
+==> Epoch 175/800
+Batch 20/78	 Loss 1.438138 (1.515346)
+Batch 40/78	 Loss 1.462669 (1.512678)
+Batch 60/78	 Loss 1.626083 (1.530830)
+==> Epoch 176/800
+Batch 20/78	 Loss 1.539683 (1.439730)
+Batch 40/78	 Loss 1.537475 (1.474092)
+Batch 60/78	 Loss 1.361311 (1.488989)
+==> Epoch 177/800
+Batch 20/78	 Loss 1.495392 (1.447565)
+Batch 40/78	 Loss 1.486883 (1.475179)
+Batch 60/78	 Loss 1.873694 (1.526403)
+==> Epoch 178/800
+Batch 20/78	 Loss 1.467404 (1.421230)
+Batch 40/78	 Loss 1.614097 (1.468538)
+Batch 60/78	 Loss 1.355025 (1.490390)
+==> Epoch 179/800
+Batch 20/78	 Loss 2.178064 (1.429685)
+Batch 40/78	 Loss 2.046402 (1.505900)
+Batch 60/78	 Loss 1.518576 (1.505816)
+==> Epoch 180/800
+Batch 20/78	 Loss 1.515361 (1.498062)
+Batch 40/78	 Loss 1.409605 (1.513633)
+Batch 60/78	 Loss 2.079645 (1.521545)
+==> Epoch 181/800
+Batch 20/78	 Loss 1.382772 (1.445972)
+Batch 40/78	 Loss 1.599467 (1.455783)
+Batch 60/78	 Loss 1.388818 (1.479194)
+==> Epoch 182/800
+Batch 20/78	 Loss 1.360337 (1.381350)
+Batch 40/78	 Loss 1.447348 (1.416655)
+Batch 60/78	 Loss 1.448995 (1.433631)
+==> Epoch 183/800
+Batch 20/78	 Loss 1.478093 (1.516867)
+Batch 40/78	 Loss 1.540339 (1.498438)
+Batch 60/78	 Loss 1.444790 (1.522090)
+==> Epoch 184/800
+Batch 20/78	 Loss 1.481088 (1.376298)
+Batch 40/78	 Loss 1.341864 (1.413505)
+Batch 60/78	 Loss 1.392722 (1.441299)
+==> Epoch 185/800
+Batch 20/78	 Loss 1.409304 (1.418630)
+Batch 40/78	 Loss 1.325070 (1.424547)
+Batch 60/78	 Loss 1.430885 (1.439576)
+==> Epoch 186/800
+Batch 20/78	 Loss 1.493856 (1.454641)
+Batch 40/78	 Loss 1.418923 (1.460777)
+Batch 60/78	 Loss 1.413298 (1.468991)
+==> Epoch 187/800
+Batch 20/78	 Loss 1.628812 (1.510951)
+Batch 40/78	 Loss 1.406438 (1.500425)
+Batch 60/78	 Loss 1.725255 (1.560204)
+==> Epoch 188/800
+Batch 20/78	 Loss 1.543131 (1.457727)
+Batch 40/78	 Loss 1.702281 (1.510791)
+Batch 60/78	 Loss 1.608171 (1.511897)
+==> Epoch 189/800
+Batch 20/78	 Loss 1.511076 (1.424604)
+Batch 40/78	 Loss 1.355673 (1.455336)
+Batch 60/78	 Loss 1.636588 (1.471990)
+==> Epoch 190/800
+Batch 20/78	 Loss 1.486849 (1.375171)
+Batch 40/78	 Loss 1.300322 (1.383895)
+Batch 60/78	 Loss 1.375744 (1.412972)
+==> Epoch 191/800
+Batch 20/78	 Loss 1.364584 (1.445394)
+Batch 40/78	 Loss 1.505008 (1.422262)
+Batch 60/78	 Loss 1.507829 (1.429425)
+==> Epoch 192/800
+Batch 20/78	 Loss 1.686234 (1.426495)
+Batch 40/78	 Loss 1.655965 (1.405917)
+Batch 60/78	 Loss 1.440983 (1.420001)
+==> Epoch 193/800
+Batch 20/78	 Loss 1.417339 (1.411328)
+Batch 40/78	 Loss 1.314639 (1.432234)
+Batch 60/78	 Loss 1.596746 (1.446202)
+==> Epoch 194/800
+Batch 20/78	 Loss 1.378520 (1.350874)
+Batch 40/78	 Loss 1.718868 (1.428132)
+Batch 60/78	 Loss 1.448699 (1.459980)
+==> Epoch 195/800
+Batch 20/78	 Loss 1.386378 (1.480636)
+Batch 40/78	 Loss 1.375473 (1.457618)
+Batch 60/78	 Loss 1.380053 (1.459153)
+==> Epoch 196/800
+Batch 20/78	 Loss 1.472675 (1.460895)
+Batch 40/78	 Loss 1.453971 (1.494648)
+Batch 60/78	 Loss 1.546999 (1.523732)
+==> Epoch 197/800
+Batch 20/78	 Loss 1.752217 (1.684018)
+Batch 40/78	 Loss 1.703858 (1.699582)
+Batch 60/78	 Loss 1.540465 (1.685457)
+==> Epoch 198/800
+Batch 20/78	 Loss 1.761043 (1.499668)
+Batch 40/78	 Loss 1.469559 (1.503921)
+Batch 60/78	 Loss 1.436551 (1.524048)
+==> Epoch 199/800
+Batch 20/78	 Loss 1.259002 (1.469806)
+Batch 40/78	 Loss 1.633076 (1.491387)
+Batch 60/78	 Loss 1.515626 (1.493474)
+==> Epoch 200/800
+Batch 20/78	 Loss 1.404794 (1.426574)
+Batch 40/78	 Loss 1.352964 (1.513708)
+Batch 60/78	 Loss 1.439533 (1.502472)
+==> Test
+Extracted features for query set, obtained 1980-by-2048 matrix
+Extracted features for gallery set, obtained 9330-by-2048 matrix
+Computing distance matrix
+Computing CMC and mAP
+Results ----------
+mAP: 65.4%
+CMC curve
+Rank-1  : 73.9%
+Rank-5  : 88.7%
+Rank-10 : 92.2%
+Rank-20 : 94.6%
+------------------
+==> Epoch 201/800
+Batch 20/78	 Loss 1.287362 (1.416084)
+Batch 40/78	 Loss 1.302831 (1.422635)
+Batch 60/78	 Loss 1.415766 (1.451036)
+==> Epoch 202/800
+Batch 20/78	 Loss 1.330458 (1.430410)
+Batch 40/78	 Loss 1.453566 (1.412080)
+Batch 60/78	 Loss 1.359484 (1.395305)
+==> Epoch 203/800
+Batch 20/78	 Loss 1.618375 (1.322530)
+Batch 40/78	 Loss 1.217788 (1.291129)
+Batch 60/78	 Loss 1.483257 (1.321116)
+==> Epoch 204/800
+Batch 20/78	 Loss 1.348017 (1.325273)
+Batch 40/78	 Loss 1.342025 (1.287106)
+Batch 60/78	 Loss 1.288885 (1.300084)
+==> Epoch 205/800
+Batch 20/78	 Loss 1.235094 (1.285254)
+Batch 40/78	 Loss 1.309392 (1.276834)
+Batch 60/78	 Loss 1.183655 (1.279126)
+==> Epoch 206/800
+Batch 20/78	 Loss 1.225547 (1.249792)
+Batch 40/78	 Loss 1.175153 (1.251785)
+Batch 60/78	 Loss 1.296485 (1.269097)
+==> Epoch 207/800
+Batch 20/78	 Loss 1.252287 (1.261929)
+Batch 40/78	 Loss 1.196131 (1.273781)
+Batch 60/78	 Loss 1.204579 (1.269643)
+==> Epoch 208/800
+Batch 20/78	 Loss 1.305772 (1.286581)
+Batch 40/78	 Loss 1.370413 (1.310559)
+Batch 60/78	 Loss 1.208144 (1.297775)
+==> Epoch 209/800
+Batch 20/78	 Loss 1.212251 (1.247492)
+Batch 40/78	 Loss 1.211066 (1.241677)
+Batch 60/78	 Loss 1.182662 (1.242410)
+==> Epoch 210/800
+Batch 20/78	 Loss 1.287422 (1.252147)
+Batch 40/78	 Loss 1.345008 (1.246081)
+Batch 60/78	 Loss 2.169643 (1.278366)
+==> Epoch 211/800
+Batch 20/78	 Loss 1.277439 (1.238894)
+Batch 40/78	 Loss 1.471902 (1.241739)
+Batch 60/78	 Loss 1.238333 (1.243707)
+==> Epoch 212/800
+Batch 20/78	 Loss 1.352647 (1.253436)
+Batch 40/78	 Loss 1.200521 (1.248036)
+Batch 60/78	 Loss 1.202468 (1.267722)
+==> Epoch 213/800
+Batch 20/78	 Loss 1.182172 (1.215521)
+Batch 40/78	 Loss 1.313925 (1.250011)
+Batch 60/78	 Loss 1.245207 (1.252920)
+==> Epoch 214/800
+Batch 20/78	 Loss 1.234067 (1.257639)
+Batch 40/78	 Loss 1.206060 (1.245744)
+Batch 60/78	 Loss 1.327407 (1.262032)
+==> Epoch 215/800
+Batch 20/78	 Loss 1.277468 (1.240519)
+Batch 40/78	 Loss 1.201825 (1.224310)
+Batch 60/78	 Loss 1.259920 (1.231451)
+==> Epoch 216/800
+Batch 20/78	 Loss 1.416620 (1.228833)
+Batch 40/78	 Loss 1.240668 (1.232944)
+Batch 60/78	 Loss 1.262527 (1.226372)
+==> Epoch 217/800
+Batch 20/78	 Loss 1.210175 (1.241023)
+Batch 40/78	 Loss 1.354893 (1.234050)
+Batch 60/78	 Loss 1.270666 (1.238936)
+==> Epoch 218/800
+Batch 20/78	 Loss 1.199979 (1.218704)
+Batch 40/78	 Loss 1.204369 (1.224068)
+Batch 60/78	 Loss 1.224333 (1.224769)
+==> Epoch 219/800
+Batch 20/78	 Loss 1.216894 (1.267571)
+Batch 40/78	 Loss 1.202493 (1.248577)
+Batch 60/78	 Loss 1.192864 (1.239591)
+==> Epoch 220/800
+Batch 20/78	 Loss 1.147077 (1.226850)
+Batch 40/78	 Loss 1.147502 (1.219002)
+Batch 60/78	 Loss 1.262184 (1.232426)
+==> Epoch 221/800
+Batch 20/78	 Loss 1.213771 (1.216935)
+Batch 40/78	 Loss 1.271855 (1.242500)
+Batch 60/78	 Loss 1.186426 (1.241846)
+==> Epoch 222/800
+Batch 20/78	 Loss 1.195168 (1.218643)
+Batch 40/78	 Loss 1.226127 (1.220023)
+Batch 60/78	 Loss 1.192188 (1.224553)
+==> Epoch 223/800
+Batch 20/78	 Loss 1.200684 (1.219196)
+Batch 40/78	 Loss 1.191766 (1.230048)
+Batch 60/78	 Loss 1.411047 (1.243060)
+==> Epoch 224/800
+Batch 20/78	 Loss 1.157831 (1.206247)
+Batch 40/78	 Loss 1.172972 (1.206354)
+Batch 60/78	 Loss 1.223538 (1.212058)
+==> Epoch 225/800
+Batch 20/78	 Loss 1.444184 (1.203416)
+Batch 40/78	 Loss 1.223678 (1.229665)
+Batch 60/78	 Loss 1.178027 (1.228400)
+==> Epoch 226/800
+Batch 20/78	 Loss 1.174014 (1.227811)
+Batch 40/78	 Loss 1.156428 (1.221696)
+Batch 60/78	 Loss 1.178844 (1.220714)
+==> Epoch 227/800
+Batch 20/78	 Loss 1.177138 (1.208530)
+Batch 40/78	 Loss 1.271753 (1.209459)
+Batch 60/78	 Loss 1.254079 (1.221426)
+==> Epoch 228/800
+Batch 20/78	 Loss 1.294191 (1.255107)
+Batch 40/78	 Loss 1.168936 (1.232563)
+Batch 60/78	 Loss 1.172605 (1.230040)
+==> Epoch 229/800
+Batch 20/78	 Loss 1.173042 (1.237529)
+Batch 40/78	 Loss 1.218187 (1.219992)
+Batch 60/78	 Loss 1.396853 (1.223186)
+==> Epoch 230/800
+Batch 20/78	 Loss 1.145606 (1.225044)
+Batch 40/78	 Loss 1.251259 (1.245585)
+Batch 60/78	 Loss 1.167286 (1.242078)
+==> Epoch 231/800
+Batch 20/78	 Loss 1.445189 (1.267658)
+Batch 40/78	 Loss 1.170146 (1.229515)
+Batch 60/78	 Loss 1.149056 (1.222203)
+==> Epoch 232/800
+Batch 20/78	 Loss 1.158364 (1.209121)
+Batch 40/78	 Loss 1.174361 (1.212625)
+Batch 60/78	 Loss 1.177005 (1.223868)
+==> Epoch 233/800
+Batch 20/78	 Loss 1.169590 (1.227565)
+Batch 40/78	 Loss 1.318624 (1.213253)
+Batch 60/78	 Loss 1.138845 (1.210408)
+==> Epoch 234/800
+Batch 20/78	 Loss 1.170958 (1.241331)
+Batch 40/78	 Loss 1.370587 (1.229887)
+Batch 60/78	 Loss 1.155496 (1.215640)
+==> Epoch 235/800
+Batch 20/78	 Loss 1.219041 (1.201108)
+Batch 40/78	 Loss 1.181695 (1.191741)
+Batch 60/78	 Loss 1.312157 (1.201895)
+==> Epoch 236/800
+Batch 20/78	 Loss 1.168886 (1.198485)
+Batch 40/78	 Loss 1.166372 (1.204173)
+Batch 60/78	 Loss 1.191712 (1.214307)
+==> Epoch 237/800
+Batch 20/78	 Loss 1.175230 (1.193862)
+Batch 40/78	 Loss 1.185211 (1.200206)
+Batch 60/78	 Loss 1.213586 (1.213037)
+==> Epoch 238/800
+Batch 20/78	 Loss 1.280982 (1.215127)
+Batch 40/78	 Loss 1.287195 (1.216431)
+Batch 60/78	 Loss 1.242551 (1.219401)
+==> Epoch 239/800
+Batch 20/78	 Loss 1.177829 (1.178279)
+Batch 40/78	 Loss 1.155204 (1.184922)
+Batch 60/78	 Loss 1.215275 (1.187157)
+==> Epoch 240/800
+Batch 20/78	 Loss 1.242654 (1.225364)
+Batch 40/78	 Loss 1.316700 (1.213960)
+Batch 60/78	 Loss 1.205030 (1.207341)
+==> Epoch 241/800
+Batch 20/78	 Loss 1.211546 (1.207915)
+Batch 40/78	 Loss 1.167240 (1.221206)
+Batch 60/78	 Loss 1.200530 (1.235587)
+==> Epoch 242/800
+Batch 20/78	 Loss 1.231263 (1.197126)
+Batch 40/78	 Loss 1.169160 (1.206474)
+Batch 60/78	 Loss 1.157131 (1.201791)
+==> Epoch 243/800
+Batch 20/78	 Loss 1.272568 (1.202070)
+Batch 40/78	 Loss 1.154572 (1.192077)
+Batch 60/78	 Loss 1.178144 (1.187000)
+==> Epoch 244/800
+Batch 20/78	 Loss 1.140847 (1.179986)
+Batch 40/78	 Loss 1.168518 (1.188218)
+Batch 60/78	 Loss 1.123727 (1.195190)
+==> Epoch 245/800
+Batch 20/78	 Loss 1.216096 (1.192223)
+Batch 40/78	 Loss 1.157188 (1.183565)
+Batch 60/78	 Loss 1.275670 (1.194000)
+==> Epoch 246/800
+Batch 20/78	 Loss 1.134268 (1.175480)
+Batch 40/78	 Loss 1.155855 (1.184894)
+Batch 60/78	 Loss 1.191385 (1.205808)
+==> Epoch 247/800
+Batch 20/78	 Loss 1.579173 (1.223983)
+Batch 40/78	 Loss 1.142195 (1.228503)
+Batch 60/78	 Loss 1.172789 (1.223708)
+==> Epoch 248/800
+Batch 20/78	 Loss 1.370680 (1.224007)
+Batch 40/78	 Loss 1.144108 (1.206105)
+Batch 60/78	 Loss 1.195815 (1.194484)
+==> Epoch 249/800
+Batch 20/78	 Loss 1.151341 (1.181535)
+Batch 40/78	 Loss 1.175131 (1.176044)
+Batch 60/78	 Loss 1.234098 (1.185041)
+==> Epoch 250/800
+Batch 20/78	 Loss 1.166788 (1.175144)
+Batch 40/78	 Loss 1.213492 (1.189270)
+Batch 60/78	 Loss 1.166264 (1.189842)
+==> Test
+Extracted features for query set, obtained 1980-by-2048 matrix
+Extracted features for gallery set, obtained 9330-by-2048 matrix
+Computing distance matrix
+Computing CMC and mAP
+Results ----------
+mAP: 74.1%
+CMC curve
+Rank-1  : 81.5%
+Rank-5  : 93.2%
+Rank-10 : 95.3%
+Rank-20 : 96.5%
+------------------
+==> Epoch 251/800
+Batch 20/78	 Loss 1.225088 (1.195907)
+Batch 40/78	 Loss 1.243104 (1.194864)
+Batch 60/78	 Loss 1.165734 (1.200028)
+==> Epoch 252/800
+Batch 20/78	 Loss 1.141639 (1.181230)
+Batch 40/78	 Loss 1.150372 (1.187474)
+Batch 60/78	 Loss 1.249664 (1.202755)
+==> Epoch 253/800
+Batch 20/78	 Loss 1.175347 (1.204376)
+Batch 40/78	 Loss 1.184484 (1.224432)
+Batch 60/78	 Loss 1.159489 (1.219200)
+==> Epoch 254/800
+Batch 20/78	 Loss 1.173035 (1.212926)
+Batch 40/78	 Loss 1.160772 (1.196550)
+Batch 60/78	 Loss 1.167205 (1.198795)
+==> Epoch 255/800
+Batch 20/78	 Loss 1.218853 (1.183337)
+Batch 40/78	 Loss 1.181955 (1.199973)
+Batch 60/78	 Loss 1.364245 (1.193267)
+==> Epoch 256/800
+Batch 20/78	 Loss 1.196505 (1.183026)
+Batch 40/78	 Loss 1.149051 (1.196677)
+Batch 60/78	 Loss 1.150154 (1.200117)
+==> Epoch 257/800
+Batch 20/78	 Loss 1.166346 (1.193071)
+Batch 40/78	 Loss 1.185178 (1.182039)
+Batch 60/78	 Loss 1.180957 (1.201853)
+==> Epoch 258/800
+Batch 20/78	 Loss 1.424134 (1.213177)
+Batch 40/78	 Loss 1.158640 (1.208044)
+Batch 60/78	 Loss 1.153983 (1.218751)
+==> Epoch 259/800
+Batch 20/78	 Loss 1.155953 (1.218778)
+Batch 40/78	 Loss 1.134976 (1.210838)
+Batch 60/78	 Loss 1.150855 (1.198703)
+==> Epoch 260/800
+Batch 20/78	 Loss 1.134745 (1.210652)
+Batch 40/78	 Loss 1.147951 (1.199670)
+Batch 60/78	 Loss 1.148652 (1.197080)
+==> Epoch 261/800
+Batch 20/78	 Loss 1.128274 (1.168701)
+Batch 40/78	 Loss 1.188032 (1.176240)
+Batch 60/78	 Loss 1.238698 (1.191077)
+==> Epoch 262/800
+Batch 20/78	 Loss 1.179356 (1.213329)
+Batch 40/78	 Loss 1.373274 (1.208102)
+Batch 60/78	 Loss 1.162527 (1.203603)
+==> Epoch 263/800
+Batch 20/78	 Loss 1.155841 (1.174263)
+Batch 40/78	 Loss 1.182011 (1.188414)
+Batch 60/78	 Loss 1.818429 (1.215440)
+==> Epoch 264/800
+Batch 20/78	 Loss 1.256510 (1.210953)
+Batch 40/78	 Loss 1.148813 (1.202771)
+Batch 60/78	 Loss 1.220258 (1.193488)
+==> Epoch 265/800
+Batch 20/78	 Loss 1.130927 (1.168837)
+Batch 40/78	 Loss 1.167060 (1.198422)
+Batch 60/78	 Loss 1.163951 (1.187135)
+==> Epoch 266/800
+Batch 20/78	 Loss 1.233413 (1.198186)
+Batch 40/78	 Loss 1.156018 (1.193319)
+Batch 60/78	 Loss 1.188044 (1.192602)
+==> Epoch 267/800
+Batch 20/78	 Loss 1.173836 (1.183124)
+Batch 40/78	 Loss 1.125394 (1.172561)
+Batch 60/78	 Loss 1.174472 (1.191386)
+==> Epoch 268/800
+Batch 20/78	 Loss 1.196775 (1.181976)
+Batch 40/78	 Loss 1.602751 (1.200169)
+Batch 60/78	 Loss 1.224573 (1.194008)
+==> Epoch 269/800
+Batch 20/78	 Loss 1.146069 (1.206271)
+Batch 40/78	 Loss 1.187000 (1.193432)
+Batch 60/78	 Loss 1.155025 (1.198800)
+==> Epoch 270/800
+Batch 20/78	 Loss 1.270101 (1.189271)
+Batch 40/78	 Loss 1.140272 (1.183025)
+Batch 60/78	 Loss 1.176262 (1.192679)
+==> Epoch 271/800
+Batch 20/78	 Loss 1.158909 (1.196291)
+Batch 40/78	 Loss 1.170314 (1.197108)
+Batch 60/78	 Loss 1.164234 (1.192370)
+==> Epoch 272/800
+Batch 20/78	 Loss 1.154608 (1.168118)
+Batch 40/78	 Loss 1.126342 (1.160223)
+Batch 60/78	 Loss 1.205923 (1.171693)
+==> Epoch 273/800
+Batch 20/78	 Loss 1.207403 (1.199648)
+Batch 40/78	 Loss 1.176327 (1.187495)
+Batch 60/78	 Loss 1.182402 (1.194143)
+==> Epoch 274/800
+Batch 20/78	 Loss 1.151975 (1.193690)
+Batch 40/78	 Loss 1.190421 (1.196929)
+Batch 60/78	 Loss 1.138907 (1.189312)
+==> Epoch 275/800
+Batch 20/78	 Loss 1.194537 (1.157817)
+Batch 40/78	 Loss 1.155648 (1.163038)
+Batch 60/78	 Loss 1.144360 (1.170476)
+==> Epoch 276/800
+Batch 20/78	 Loss 1.124870 (1.182139)
+Batch 40/78	 Loss 1.179203 (1.178664)
+Batch 60/78	 Loss 1.267938 (1.179433)
+==> Epoch 277/800
+Batch 20/78	 Loss 1.260407 (1.200810)
+Batch 40/78	 Loss 1.140675 (1.194711)
+Batch 60/78	 Loss 1.147838 (1.191830)
+==> Epoch 278/800
+Batch 20/78	 Loss 1.151993 (1.183454)
+Batch 40/78	 Loss 1.189930 (1.178193)
+Batch 60/78	 Loss 1.203797 (1.176550)
+==> Epoch 279/800
+Batch 20/78	 Loss 1.276414 (1.188467)
+Batch 40/78	 Loss 1.178774 (1.186418)
+Batch 60/78	 Loss 1.186215 (1.189917)
+==> Epoch 280/800
+Batch 20/78	 Loss 1.155959 (1.174295)
+Batch 40/78	 Loss 1.163060 (1.199220)
+Batch 60/78	 Loss 1.178694 (1.193562)
+==> Epoch 281/800
+Batch 20/78	 Loss 1.261227 (1.218637)
+Batch 40/78	 Loss 1.124724 (1.203431)
+Batch 60/78	 Loss 1.157295 (1.196752)
+==> Epoch 282/800
+Batch 20/78	 Loss 1.175447 (1.155644)
+Batch 40/78	 Loss 1.127636 (1.183008)
+Batch 60/78	 Loss 1.174581 (1.179289)
+==> Epoch 283/800
+Batch 20/78	 Loss 1.120043 (1.170931)
+Batch 40/78	 Loss 1.132743 (1.176497)
+Batch 60/78	 Loss 1.176524 (1.177820)
+==> Epoch 284/800
+Batch 20/78	 Loss 1.152616 (1.215890)
+Batch 40/78	 Loss 1.166236 (1.198664)
+Batch 60/78	 Loss 1.124730 (1.197228)
+==> Epoch 285/800
+Batch 20/78	 Loss 1.167727 (1.191983)
+Batch 40/78	 Loss 1.260058 (1.178720)
+Batch 60/78	 Loss 1.129287 (1.168631)
+==> Epoch 286/800
+Batch 20/78	 Loss 1.115671 (1.201886)
+Batch 40/78	 Loss 1.170508 (1.188952)
+Batch 60/78	 Loss 1.161814 (1.187174)
+==> Epoch 287/800
+Batch 20/78	 Loss 1.123996 (1.155487)
+Batch 40/78	 Loss 1.153430 (1.176898)
+Batch 60/78	 Loss 1.187720 (1.182818)
+==> Epoch 288/800
+Batch 20/78	 Loss 1.196022 (1.177645)
+Batch 40/78	 Loss 1.133655 (1.174404)
+Batch 60/78	 Loss 1.182763 (1.176779)
+==> Epoch 289/800
+Batch 20/78	 Loss 1.154049 (1.155704)
+Batch 40/78	 Loss 1.132580 (1.156399)
+Batch 60/78	 Loss 1.209963 (1.160970)
+==> Epoch 290/800
+Batch 20/78	 Loss 1.156828 (1.178181)
+Batch 40/78	 Loss 1.133934 (1.168632)
+Batch 60/78	 Loss 1.157568 (1.171897)
+==> Epoch 291/800
+Batch 20/78	 Loss 1.115561 (1.185260)
+Batch 40/78	 Loss 1.137489 (1.176301)
+Batch 60/78	 Loss 1.167284 (1.179101)
+==> Epoch 292/800
+Batch 20/78	 Loss 1.144606 (1.193456)
+Batch 40/78	 Loss 1.153805 (1.183066)
+Batch 60/78	 Loss 1.178318 (1.183211)
+==> Epoch 293/800
+Batch 20/78	 Loss 1.318288 (1.187668)
+Batch 40/78	 Loss 1.177931 (1.201967)
+Batch 60/78	 Loss 1.147237 (1.196430)
+==> Epoch 294/800
+Batch 20/78	 Loss 1.185810 (1.170748)
+Batch 40/78	 Loss 1.133029 (1.181564)
+Batch 60/78	 Loss 1.299172 (1.176915)
+==> Epoch 295/800
+Batch 20/78	 Loss 1.121813 (1.139335)
+Batch 40/78	 Loss 1.128932 (1.150803)
+Batch 60/78	 Loss 1.117209 (1.163897)
+==> Epoch 296/800
+Batch 20/78	 Loss 1.177765 (1.164164)
+Batch 40/78	 Loss 1.113722 (1.155698)
+Batch 60/78	 Loss 1.192127 (1.158845)
+==> Epoch 297/800
+Batch 20/78	 Loss 1.181707 (1.160455)
+Batch 40/78	 Loss 1.165724 (1.157034)
+Batch 60/78	 Loss 1.125753 (1.159238)
+==> Epoch 298/800
+Batch 20/78	 Loss 1.413880 (1.189905)
+Batch 40/78	 Loss 1.175018 (1.177539)
+Batch 60/78	 Loss 1.302425 (1.181065)
+==> Epoch 299/800
+Batch 20/78	 Loss 1.150935 (1.172846)
+Batch 40/78	 Loss 1.118605 (1.178218)
+Batch 60/78	 Loss 1.187991 (1.176583)
+==> Epoch 300/800
+Batch 20/78	 Loss 1.135087 (1.180353)
+Batch 40/78	 Loss 1.160089 (1.171219)
+Batch 60/78	 Loss 1.175489 (1.171037)
+==> Test
+Extracted features for query set, obtained 1980-by-2048 matrix
+Extracted features for gallery set, obtained 9330-by-2048 matrix
+Computing distance matrix
+Computing CMC and mAP
+Results ----------
+mAP: 75.0%
+CMC curve
+Rank-1  : 82.4%
+Rank-5  : 93.5%
+Rank-10 : 95.7%
+Rank-20 : 97.2%
+------------------
+==> Epoch 301/800
+Batch 20/78	 Loss 1.163822 (1.180032)
+Batch 40/78	 Loss 1.127901 (1.173762)
+Batch 60/78	 Loss 1.205876 (1.173627)
+==> Epoch 302/800
+Batch 20/78	 Loss 1.162405 (1.193208)
+Batch 40/78	 Loss 1.121163 (1.179611)
+Batch 60/78	 Loss 1.157372 (1.181969)
+==> Epoch 303/800
+Batch 20/78	 Loss 1.124777 (1.160095)
+Batch 40/78	 Loss 1.190016 (1.171877)
+Batch 60/78	 Loss 1.334159 (1.183556)
+==> Epoch 304/800
+Batch 20/78	 Loss 1.135332 (1.153972)
+Batch 40/78	 Loss 1.120702 (1.157774)
+Batch 60/78	 Loss 1.167545 (1.163838)
+==> Epoch 305/800
+Batch 20/78	 Loss 1.313465 (1.235891)
+Batch 40/78	 Loss 1.139313 (1.196799)
+Batch 60/78	 Loss 1.172906 (1.192125)
+==> Epoch 306/800
+Batch 20/78	 Loss 1.133240 (1.182478)
+Batch 40/78	 Loss 1.234396 (1.185135)
+Batch 60/78	 Loss 1.144897 (1.179136)
+==> Epoch 307/800
+Batch 20/78	 Loss 1.164999 (1.214881)
+Batch 40/78	 Loss 1.123990 (1.187787)
+Batch 60/78	 Loss 1.249296 (1.188294)
+==> Epoch 308/800
+Batch 20/78	 Loss 1.110243 (1.168403)
+Batch 40/78	 Loss 1.172288 (1.176815)
+Batch 60/78	 Loss 1.174682 (1.175047)
+==> Epoch 309/800
+Batch 20/78	 Loss 1.325231 (1.181764)
+Batch 40/78	 Loss 1.308270 (1.172729)
+Batch 60/78	 Loss 1.150286 (1.179588)
+==> Epoch 310/800
+Batch 20/78	 Loss 1.224430 (1.173562)
+Batch 40/78	 Loss 1.173036 (1.189426)
+Batch 60/78	 Loss 1.282455 (1.194803)
+==> Epoch 311/800
+Batch 20/78	 Loss 1.166210 (1.160050)
+Batch 40/78	 Loss 1.219154 (1.169189)
+Batch 60/78	 Loss 1.168916 (1.181447)
+==> Epoch 312/800
+Batch 20/78	 Loss 1.187622 (1.145830)
+Batch 40/78	 Loss 1.122898 (1.144571)
+Batch 60/78	 Loss 1.186356 (1.159259)
+==> Epoch 313/800
+Batch 20/78	 Loss 1.129245 (1.154782)
+Batch 40/78	 Loss 1.220196 (1.152364)
+Batch 60/78	 Loss 1.118860 (1.151836)
+==> Epoch 314/800
+Batch 20/78	 Loss 1.143926 (1.146079)
+Batch 40/78	 Loss 1.160141 (1.148367)
+Batch 60/78	 Loss 1.170645 (1.148290)
+==> Epoch 315/800
+Batch 20/78	 Loss 1.108674 (1.147736)
+Batch 40/78	 Loss 1.131928 (1.147501)
+Batch 60/78	 Loss 1.322298 (1.163250)
+==> Epoch 316/800
+Batch 20/78	 Loss 1.190783 (1.159789)
+Batch 40/78	 Loss 1.180760 (1.165638)
+Batch 60/78	 Loss 1.115360 (1.169295)
+==> Epoch 317/800
+Batch 20/78	 Loss 1.125280 (1.177137)
+Batch 40/78	 Loss 1.135453 (1.186626)
+Batch 60/78	 Loss 1.179419 (1.182385)
+==> Epoch 318/800
+Batch 20/78	 Loss 1.122818 (1.154987)
+Batch 40/78	 Loss 1.158323 (1.159062)
+Batch 60/78	 Loss 1.254329 (1.163043)
+==> Epoch 319/800
+Batch 20/78	 Loss 1.153870 (1.165665)
+Batch 40/78	 Loss 1.137184 (1.171561)
+Batch 60/78	 Loss 1.409083 (1.169286)
+==> Epoch 320/800
+Batch 20/78	 Loss 1.115357 (1.144212)
+Batch 40/78	 Loss 1.153494 (1.154376)
+Batch 60/78	 Loss 1.118827 (1.150314)
+==> Epoch 321/800
+Batch 20/78	 Loss 1.197366 (1.170438)
+Batch 40/78	 Loss 1.141827 (1.161531)
+Batch 60/78	 Loss 1.131194 (1.166024)
+==> Epoch 322/800
+Batch 20/78	 Loss 1.114864 (1.147664)
+Batch 40/78	 Loss 1.122566 (1.162538)
+Batch 60/78	 Loss 1.136129 (1.159678)
+==> Epoch 323/800
+Batch 20/78	 Loss 1.132840 (1.156685)
+Batch 40/78	 Loss 1.148476 (1.153869)
+Batch 60/78	 Loss 1.157591 (1.157577)
+==> Epoch 324/800
+Batch 20/78	 Loss 1.125149 (1.158060)
+Batch 40/78	 Loss 1.147239 (1.179543)
+Batch 60/78	 Loss 1.109969 (1.175976)
+==> Epoch 325/800
+Batch 20/78	 Loss 1.120786 (1.175008)
+Batch 40/78	 Loss 1.145892 (1.167231)
+Batch 60/78	 Loss 1.148790 (1.165770)
+==> Epoch 326/800
+Batch 20/78	 Loss 1.136147 (1.166186)
+Batch 40/78	 Loss 1.309608 (1.162320)
+Batch 60/78	 Loss 1.451759 (1.175733)
+==> Epoch 327/800
+Batch 20/78	 Loss 1.217752 (1.163584)
+Batch 40/78	 Loss 1.113386 (1.175425)
+Batch 60/78	 Loss 1.196771 (1.170484)
+==> Epoch 328/800
+Batch 20/78	 Loss 1.138865 (1.168323)
+Batch 40/78	 Loss 1.144817 (1.163332)
+Batch 60/78	 Loss 1.184116 (1.161660)
+==> Epoch 329/800
+Batch 20/78	 Loss 1.128595 (1.174885)
+Batch 40/78	 Loss 1.185600 (1.172065)
+Batch 60/78	 Loss 1.152069 (1.175780)
+==> Epoch 330/800
+Batch 20/78	 Loss 1.111963 (1.165776)
+Batch 40/78	 Loss 1.329518 (1.172208)
+Batch 60/78	 Loss 1.117596 (1.170714)
+==> Epoch 331/800
+Batch 20/78	 Loss 1.134287 (1.142568)
+Batch 40/78	 Loss 1.135786 (1.150643)
+Batch 60/78	 Loss 1.119003 (1.150784)
+==> Epoch 332/800
+Batch 20/78	 Loss 1.224627 (1.147035)
+Batch 40/78	 Loss 1.467413 (1.169224)
+Batch 60/78	 Loss 1.203609 (1.169031)
+==> Epoch 333/800
+Batch 20/78	 Loss 1.174540 (1.178441)
+Batch 40/78	 Loss 1.160782 (1.167322)
+Batch 60/78	 Loss 1.137883 (1.168577)
+==> Epoch 334/800
+Batch 20/78	 Loss 1.222969 (1.160189)
+Batch 40/78	 Loss 1.195573 (1.169839)
+Batch 60/78	 Loss 1.160632 (1.165032)
+==> Epoch 335/800
+Batch 20/78	 Loss 1.127699 (1.161716)
+Batch 40/78	 Loss 1.245932 (1.167673)
+Batch 60/78	 Loss 1.124387 (1.169325)
+==> Epoch 336/800
+Batch 20/78	 Loss 1.148217 (1.182218)
+Batch 40/78	 Loss 1.133273 (1.175081)
+Batch 60/78	 Loss 1.215195 (1.179595)
+==> Epoch 337/800
+Batch 20/78	 Loss 1.207862 (1.153787)
+Batch 40/78	 Loss 1.141552 (1.160501)
+Batch 60/78	 Loss 1.191689 (1.162787)
+==> Epoch 338/800
+Batch 20/78	 Loss 1.128132 (1.165529)
+Batch 40/78	 Loss 1.103719 (1.167616)
+Batch 60/78	 Loss 1.104671 (1.165703)
+==> Epoch 339/800
+Batch 20/78	 Loss 1.221148 (1.160533)
+Batch 40/78	 Loss 1.156193 (1.154757)
+Batch 60/78	 Loss 1.157409 (1.157383)
+==> Epoch 340/800
+Batch 20/78	 Loss 1.191591 (1.160615)
+Batch 40/78	 Loss 1.129021 (1.159297)
+Batch 60/78	 Loss 1.151820 (1.174003)
+==> Epoch 341/800
+Batch 20/78	 Loss 1.107965 (1.151276)
+Batch 40/78	 Loss 1.146545 (1.160886)
+Batch 60/78	 Loss 1.121963 (1.154640)
+==> Epoch 342/800
+Batch 20/78	 Loss 1.349250 (1.150821)
+Batch 40/78	 Loss 1.131352 (1.163409)
+Batch 60/78	 Loss 1.174777 (1.158826)
+==> Epoch 343/800
+Batch 20/78	 Loss 1.144935 (1.182210)
+Batch 40/78	 Loss 1.129707 (1.181599)
+Batch 60/78	 Loss 1.157907 (1.179173)
+==> Epoch 344/800
+Batch 20/78	 Loss 1.259608 (1.151553)
+Batch 40/78	 Loss 1.146114 (1.155884)
+Batch 60/78	 Loss 1.205642 (1.160652)
+==> Epoch 345/800
+Batch 20/78	 Loss 1.199832 (1.147580)
+Batch 40/78	 Loss 1.108556 (1.143333)
+Batch 60/78	 Loss 1.112451 (1.147515)
+==> Epoch 346/800
+Batch 20/78	 Loss 1.135238 (1.162045)
+Batch 40/78	 Loss 1.169339 (1.149602)
+Batch 60/78	 Loss 1.208052 (1.154112)
+==> Epoch 347/800
+Batch 20/78	 Loss 1.117871 (1.161674)
+Batch 40/78	 Loss 1.103211 (1.155281)
+Batch 60/78	 Loss 1.153491 (1.152248)
+==> Epoch 348/800
+Batch 20/78	 Loss 1.124804 (1.139946)
+Batch 40/78	 Loss 1.165837 (1.146181)
+Batch 60/78	 Loss 1.146492 (1.152243)
+==> Epoch 349/800
+Batch 20/78	 Loss 1.116435 (1.138971)
+Batch 40/78	 Loss 1.117765 (1.141070)
+Batch 60/78	 Loss 1.182394 (1.153905)
+==> Epoch 350/800
+Batch 20/78	 Loss 1.159886 (1.160417)
+Batch 40/78	 Loss 1.106627 (1.152008)
+Batch 60/78	 Loss 1.101220 (1.161268)
+==> Test
+Extracted features for query set, obtained 1980-by-2048 matrix
+Extracted features for gallery set, obtained 9330-by-2048 matrix
+Computing distance matrix
+Computing CMC and mAP
+Results ----------
+mAP: 74.8%
+CMC curve
+Rank-1  : 82.1%
+Rank-5  : 93.2%
+Rank-10 : 95.7%
+Rank-20 : 96.9%
+------------------
+==> Epoch 351/800
+Batch 20/78	 Loss 1.142074 (1.169570)
+Batch 40/78	 Loss 1.184208 (1.168021)
+Batch 60/78	 Loss 1.276437 (1.167916)
+==> Epoch 352/800
+Batch 20/78	 Loss 1.103817 (1.163307)
+Batch 40/78	 Loss 1.124739 (1.164554)
+Batch 60/78	 Loss 1.240841 (1.172747)
+==> Epoch 353/800
+Batch 20/78	 Loss 1.172820 (1.184153)
+Batch 40/78	 Loss 1.130726 (1.167919)
+Batch 60/78	 Loss 1.194273 (1.172645)
+==> Epoch 354/800
+Batch 20/78	 Loss 1.207924 (1.141454)
+Batch 40/78	 Loss 1.170690 (1.146897)
+Batch 60/78	 Loss 1.245903 (1.159423)
+==> Epoch 355/800
+Batch 20/78	 Loss 1.134862 (1.169713)
+Batch 40/78	 Loss 1.111755 (1.148836)
+Batch 60/78	 Loss 1.112101 (1.156836)
+==> Epoch 356/800
+Batch 20/78	 Loss 1.140558 (1.156922)
+Batch 40/78	 Loss 1.373270 (1.160262)
+Batch 60/78	 Loss 1.139263 (1.161262)
+==> Epoch 357/800
+Batch 20/78	 Loss 1.130152 (1.169142)
+Batch 40/78	 Loss 1.125300 (1.162361)
+Batch 60/78	 Loss 1.142299 (1.166681)
+==> Epoch 358/800
+Batch 20/78	 Loss 1.107924 (1.166124)
+Batch 40/78	 Loss 1.111013 (1.152978)
+Batch 60/78	 Loss 1.103279 (1.152194)
+==> Epoch 359/800
+Batch 20/78	 Loss 1.162139 (1.153520)
+Batch 40/78	 Loss 1.105875 (1.153995)
+Batch 60/78	 Loss 1.121336 (1.149874)
+==> Epoch 360/800
+Batch 20/78	 Loss 1.144284 (1.140969)
+Batch 40/78	 Loss 1.101918 (1.144530)
+Batch 60/78	 Loss 1.131681 (1.144542)
+==> Epoch 361/800
+Batch 20/78	 Loss 1.105771 (1.148234)
+Batch 40/78	 Loss 1.133467 (1.152420)
+Batch 60/78	 Loss 1.136620 (1.147279)
+==> Epoch 362/800
+Batch 20/78	 Loss 1.097977 (1.134321)
+Batch 40/78	 Loss 1.134187 (1.137276)
+Batch 60/78	 Loss 1.126256 (1.144546)
+==> Epoch 363/800
+Batch 20/78	 Loss 1.158560 (1.135514)
+Batch 40/78	 Loss 1.130417 (1.144541)
+Batch 60/78	 Loss 1.127442 (1.142612)
+==> Epoch 364/800
+Batch 20/78	 Loss 1.134694 (1.184199)
+Batch 40/78	 Loss 1.284198 (1.175315)
+Batch 60/78	 Loss 1.135925 (1.173953)
+==> Epoch 365/800
+Batch 20/78	 Loss 1.123051 (1.169827)
+Batch 40/78	 Loss 1.159977 (1.182378)
+Batch 60/78	 Loss 1.204597 (1.175059)
+==> Epoch 366/800
+Batch 20/78	 Loss 1.161702 (1.173355)
+Batch 40/78	 Loss 1.214669 (1.158670)
+Batch 60/78	 Loss 1.244004 (1.157865)
+==> Epoch 367/800
+Batch 20/78	 Loss 1.105794 (1.143020)
+Batch 40/78	 Loss 1.318830 (1.157301)
+Batch 60/78	 Loss 1.184283 (1.156853)
+==> Epoch 368/800
+Batch 20/78	 Loss 1.193741 (1.153250)
+Batch 40/78	 Loss 1.190574 (1.152476)
+Batch 60/78	 Loss 1.247836 (1.157108)
+==> Epoch 369/800
+Batch 20/78	 Loss 1.102324 (1.149147)
+Batch 40/78	 Loss 1.131759 (1.137953)
+Batch 60/78	 Loss 1.183913 (1.150758)
+==> Epoch 370/800
+Batch 20/78	 Loss 1.166034 (1.164870)
+Batch 40/78	 Loss 1.199134 (1.150498)
+Batch 60/78	 Loss 1.120092 (1.152153)
+==> Epoch 371/800
+Batch 20/78	 Loss 1.137280 (1.188611)
+Batch 40/78	 Loss 1.253308 (1.167401)
+Batch 60/78	 Loss 1.117073 (1.174633)
+==> Epoch 372/800
+Batch 20/78	 Loss 1.119203 (1.159670)
+Batch 40/78	 Loss 1.139682 (1.152755)
+Batch 60/78	 Loss 1.103649 (1.158480)
+==> Epoch 373/800
+Batch 20/78	 Loss 1.144591 (1.154505)
+Batch 40/78	 Loss 1.126001 (1.177008)
+Batch 60/78	 Loss 1.141617 (1.173302)
+==> Epoch 374/800
+Batch 20/78	 Loss 1.102233 (1.143064)
+Batch 40/78	 Loss 1.184044 (1.178836)
+Batch 60/78	 Loss 1.149072 (1.170512)
+==> Epoch 375/800
+Batch 20/78	 Loss 1.141718 (1.144450)
+Batch 40/78	 Loss 1.119430 (1.144715)
+Batch 60/78	 Loss 1.178622 (1.150431)
+==> Epoch 376/800
+Batch 20/78	 Loss 1.152630 (1.141438)
+Batch 40/78	 Loss 1.126608 (1.144346)
+Batch 60/78	 Loss 1.147202 (1.147428)
+==> Epoch 377/800
+Batch 20/78	 Loss 1.193375 (1.144365)
+Batch 40/78	 Loss 1.146588 (1.141305)
+Batch 60/78	 Loss 1.692553 (1.145154)
+==> Epoch 378/800
+Batch 20/78	 Loss 1.196047 (1.140772)
+Batch 40/78	 Loss 1.296236 (1.142176)
+Batch 60/78	 Loss 1.139855 (1.146022)
+==> Epoch 379/800
+Batch 20/78	 Loss 1.131629 (1.135188)
+Batch 40/78	 Loss 1.145780 (1.143915)
+Batch 60/78	 Loss 1.107414 (1.143306)
+==> Epoch 380/800
+Batch 20/78	 Loss 1.100495 (1.163869)
+Batch 40/78	 Loss 1.114677 (1.149063)
+Batch 60/78	 Loss 1.201442 (1.149887)
+==> Epoch 381/800
+Batch 20/78	 Loss 1.112917 (1.143898)
+Batch 40/78	 Loss 1.112136 (1.152851)
+Batch 60/78	 Loss 1.115960 (1.147626)
+==> Epoch 382/800
+Batch 20/78	 Loss 1.101563 (1.135560)
+Batch 40/78	 Loss 1.146546 (1.132057)
+Batch 60/78	 Loss 1.133893 (1.136796)
+==> Epoch 383/800
+Batch 20/78	 Loss 1.107654 (1.136427)
+Batch 40/78	 Loss 1.226423 (1.139449)
+Batch 60/78	 Loss 1.203303 (1.138028)
+==> Epoch 384/800
+Batch 20/78	 Loss 1.152531 (1.145707)
+Batch 40/78	 Loss 1.181953 (1.146546)
+Batch 60/78	 Loss 1.325012 (1.145743)
+==> Epoch 385/800
+Batch 20/78	 Loss 1.106613 (1.135658)
+Batch 40/78	 Loss 1.097350 (1.143095)
+Batch 60/78	 Loss 1.104200 (1.140511)
+==> Epoch 386/800
+Batch 20/78	 Loss 1.143495 (1.150337)
+Batch 40/78	 Loss 1.101099 (1.141005)
+Batch 60/78	 Loss 1.125203 (1.146854)
+==> Epoch 387/800
+Batch 20/78	 Loss 1.104433 (1.131195)
+Batch 40/78	 Loss 1.169157 (1.141190)
+Batch 60/78	 Loss 1.136519 (1.150937)
+==> Epoch 388/800
+Batch 20/78	 Loss 1.140329 (1.177104)
+Batch 40/78	 Loss 1.129247 (1.171838)
+Batch 60/78	 Loss 1.118408 (1.162370)
+==> Epoch 389/800
+Batch 20/78	 Loss 1.110565 (1.140609)
+Batch 40/78	 Loss 1.133527 (1.139408)
+Batch 60/78	 Loss 1.119393 (1.146385)
+==> Epoch 390/800
+Batch 20/78	 Loss 1.178485 (1.132420)
+Batch 40/78	 Loss 1.359977 (1.146101)
+Batch 60/78	 Loss 1.121056 (1.140243)
+==> Epoch 391/800
+Batch 20/78	 Loss 1.116865 (1.132392)
+Batch 40/78	 Loss 1.761149 (1.145036)
+Batch 60/78	 Loss 1.160457 (1.150774)
+==> Epoch 392/800
+Batch 20/78	 Loss 1.133570 (1.123525)
+Batch 40/78	 Loss 1.129025 (1.131986)
+Batch 60/78	 Loss 1.155770 (1.130944)
+==> Epoch 393/800
+Batch 20/78	 Loss 1.110349 (1.191245)
+Batch 40/78	 Loss 1.215167 (1.173415)
+Batch 60/78	 Loss 1.107788 (1.165773)
+==> Epoch 394/800
+Batch 20/78	 Loss 1.166246 (1.153749)
+Batch 40/78	 Loss 1.226926 (1.148823)
+Batch 60/78	 Loss 1.131003 (1.154930)
+==> Epoch 395/800
+Batch 20/78	 Loss 1.123889 (1.144912)
+Batch 40/78	 Loss 1.305495 (1.146099)
+Batch 60/78	 Loss 1.149607 (1.147214)
+==> Epoch 396/800
+Batch 20/78	 Loss 1.121590 (1.145452)
+Batch 40/78	 Loss 1.097215 (1.138910)
+Batch 60/78	 Loss 1.185677 (1.145941)
+==> Epoch 397/800
+Batch 20/78	 Loss 1.100227 (1.140948)
+Batch 40/78	 Loss 1.154820 (1.137871)
+Batch 60/78	 Loss 1.174241 (1.147700)
+==> Epoch 398/800
+Batch 20/78	 Loss 1.117525 (1.169952)
+Batch 40/78	 Loss 1.127059 (1.147826)
+Batch 60/78	 Loss 1.117365 (1.146698)
+==> Epoch 399/800
+Batch 20/78	 Loss 1.140280 (1.134339)
+Batch 40/78	 Loss 1.143314 (1.142689)
+Batch 60/78	 Loss 1.121579 (1.139888)
+==> Epoch 400/800
+Batch 20/78	 Loss 1.100337 (1.130981)
+Batch 40/78	 Loss 1.185061 (1.144046)
+Batch 60/78	 Loss 1.276064 (1.146984)
+==> Test
+Extracted features for query set, obtained 1980-by-2048 matrix
+Extracted features for gallery set, obtained 9330-by-2048 matrix
+Computing distance matrix
+Computing CMC and mAP
+Results ----------
+mAP: 74.6%
+CMC curve
+Rank-1  : 81.8%
+Rank-5  : 93.5%
+Rank-10 : 95.5%
+Rank-20 : 97.1%
+------------------
+==> Epoch 401/800
+Batch 20/78	 Loss 1.141321 (1.133856)
+Batch 40/78	 Loss 1.123086 (1.138142)
+Batch 60/78	 Loss 1.102476 (1.141536)
+==> Epoch 402/800
+Batch 20/78	 Loss 1.129455 (1.132445)
+Batch 40/78	 Loss 1.095629 (1.129609)
+Batch 60/78	 Loss 1.180837 (1.132728)
+==> Epoch 403/800
+Batch 20/78	 Loss 1.191783 (1.131132)
+Batch 40/78	 Loss 1.126364 (1.137903)
+Batch 60/78	 Loss 1.118761 (1.140542)
+==> Epoch 404/800
+Batch 20/78	 Loss 1.285355 (1.138747)
+Batch 40/78	 Loss 1.112967 (1.133820)
+Batch 60/78	 Loss 1.119264 (1.131422)
+==> Epoch 405/800
+Batch 20/78	 Loss 1.125484 (1.122729)
+Batch 40/78	 Loss 1.104570 (1.118022)
+Batch 60/78	 Loss 1.108507 (1.123945)
+==> Epoch 406/800
+Batch 20/78	 Loss 1.112991 (1.134458)
+Batch 40/78	 Loss 1.124661 (1.135752)
+Batch 60/78	 Loss 1.088395 (1.128892)
+==> Epoch 407/800
+Batch 20/78	 Loss 1.095897 (1.120962)
+Batch 40/78	 Loss 1.091805 (1.127368)
+Batch 60/78	 Loss 1.131418 (1.127890)
+==> Epoch 408/800
+Batch 20/78	 Loss 1.203190 (1.127505)
+Batch 40/78	 Loss 1.146852 (1.122056)
+Batch 60/78	 Loss 1.219614 (1.128909)
+==> Epoch 409/800
+Batch 20/78	 Loss 1.130003 (1.125798)
+Batch 40/78	 Loss 1.101227 (1.121628)
+Batch 60/78	 Loss 1.099690 (1.125074)
+==> Epoch 410/800
+Batch 20/78	 Loss 1.101022 (1.134274)
+Batch 40/78	 Loss 1.109549 (1.129365)
+Batch 60/78	 Loss 1.106146 (1.127071)
+==> Epoch 411/800
+Batch 20/78	 Loss 1.124762 (1.121096)
+Batch 40/78	 Loss 1.120716 (1.139702)
+Batch 60/78	 Loss 1.110445 (1.139428)
+==> Epoch 412/800
+Batch 20/78	 Loss 1.116472 (1.119455)
+Batch 40/78	 Loss 1.113372 (1.122273)
+Batch 60/78	 Loss 1.103951 (1.120052)
+==> Epoch 413/800
+Batch 20/78	 Loss 1.105035 (1.126791)
+Batch 40/78	 Loss 1.123127 (1.137191)
+Batch 60/78	 Loss 1.215475 (1.133461)
+==> Epoch 414/800
+Batch 20/78	 Loss 1.146876 (1.117946)
+Batch 40/78	 Loss 1.109976 (1.133784)
+Batch 60/78	 Loss 1.175911 (1.129077)
+==> Epoch 415/800
+Batch 20/78	 Loss 1.095583 (1.127984)
+Batch 40/78	 Loss 1.103115 (1.130244)
+Batch 60/78	 Loss 1.087773 (1.132209)
+==> Epoch 416/800
+Batch 20/78	 Loss 1.098106 (1.116769)
+Batch 40/78	 Loss 1.119191 (1.124044)
+Batch 60/78	 Loss 1.103058 (1.120131)
+==> Epoch 417/800
+Batch 20/78	 Loss 1.183529 (1.127474)
+Batch 40/78	 Loss 1.102810 (1.121988)
+Batch 60/78	 Loss 1.120098 (1.128578)
+==> Epoch 418/800
+Batch 20/78	 Loss 1.123484 (1.121068)
+Batch 40/78	 Loss 1.149515 (1.124191)
+Batch 60/78	 Loss 1.085256 (1.121426)
+==> Epoch 419/800
+Batch 20/78	 Loss 1.167841 (1.158329)
+Batch 40/78	 Loss 1.201833 (1.142176)
+Batch 60/78	 Loss 1.116983 (1.137033)
+==> Epoch 420/800
+Batch 20/78	 Loss 1.379349 (1.145107)
+Batch 40/78	 Loss 1.084731 (1.134482)
+Batch 60/78	 Loss 1.098996 (1.127914)
+==> Epoch 421/800
+Batch 20/78	 Loss 1.092307 (1.117092)
+Batch 40/78	 Loss 1.111150 (1.121588)
+Batch 60/78	 Loss 1.094865 (1.119856)
+==> Epoch 422/800
+Batch 20/78	 Loss 1.149760 (1.129451)
+Batch 40/78	 Loss 1.103922 (1.125172)
+Batch 60/78	 Loss 1.107466 (1.128657)
+==> Epoch 423/800
+Batch 20/78	 Loss 1.153863 (1.111892)
+Batch 40/78	 Loss 1.077187 (1.114488)
+Batch 60/78	 Loss 1.115423 (1.113988)
+==> Epoch 424/800
+Batch 20/78	 Loss 1.155598 (1.109749)
+Batch 40/78	 Loss 1.123943 (1.114387)
+Batch 60/78	 Loss 1.106178 (1.112509)
+==> Epoch 425/800
+Batch 20/78	 Loss 1.435346 (1.144286)
+Batch 40/78	 Loss 1.098860 (1.139306)
+Batch 60/78	 Loss 1.096798 (1.130148)
+==> Epoch 426/800
+Batch 20/78	 Loss 1.094915 (1.104911)
+Batch 40/78	 Loss 1.102164 (1.117391)
+Batch 60/78	 Loss 1.109881 (1.122336)
+==> Epoch 427/800
+Batch 20/78	 Loss 1.107610 (1.140275)
+Batch 40/78	 Loss 1.106557 (1.130698)
+Batch 60/78	 Loss 1.108529 (1.130204)
+==> Epoch 428/800
+Batch 20/78	 Loss 1.105295 (1.121241)
+Batch 40/78	 Loss 1.104958 (1.130999)
+Batch 60/78	 Loss 1.140039 (1.124855)
+==> Epoch 429/800
+Batch 20/78	 Loss 1.094782 (1.120946)
+Batch 40/78	 Loss 1.113188 (1.128181)
+Batch 60/78	 Loss 1.081335 (1.127725)
+==> Epoch 430/800
+Batch 20/78	 Loss 1.095915 (1.129534)
+Batch 40/78	 Loss 1.115131 (1.120802)
+Batch 60/78	 Loss 1.143901 (1.118243)
+==> Epoch 431/800
+Batch 20/78	 Loss 1.110296 (1.114068)
+Batch 40/78	 Loss 1.119398 (1.114985)
+Batch 60/78	 Loss 1.123219 (1.116995)
+==> Epoch 432/800
+Batch 20/78	 Loss 1.190386 (1.115222)
+Batch 40/78	 Loss 1.144071 (1.116047)
+Batch 60/78	 Loss 1.113276 (1.121664)
+==> Epoch 433/800
+Batch 20/78	 Loss 1.085595 (1.110244)
+Batch 40/78	 Loss 1.479120 (1.122815)
+Batch 60/78	 Loss 1.110152 (1.122153)
+==> Epoch 434/800
+Batch 20/78	 Loss 1.081548 (1.116972)
+Batch 40/78	 Loss 1.095613 (1.115210)
+Batch 60/78	 Loss 1.094420 (1.118338)
+==> Epoch 435/800
+Batch 20/78	 Loss 1.153800 (1.130686)
+Batch 40/78	 Loss 1.106620 (1.125344)
+Batch 60/78	 Loss 1.121298 (1.120997)
+==> Epoch 436/800
+Batch 20/78	 Loss 1.142531 (1.114241)
+Batch 40/78	 Loss 1.159952 (1.113737)
+Batch 60/78	 Loss 1.131648 (1.120591)
+==> Epoch 437/800
+Batch 20/78	 Loss 1.117582 (1.110187)
+Batch 40/78	 Loss 1.144502 (1.112901)
+Batch 60/78	 Loss 1.114643 (1.122431)
+==> Epoch 438/800
+Batch 20/78	 Loss 1.083792 (1.131086)
+Batch 40/78	 Loss 1.197390 (1.119005)
+Batch 60/78	 Loss 1.190912 (1.121161)
+==> Epoch 439/800
+Batch 20/78	 Loss 1.169142 (1.111864)
+Batch 40/78	 Loss 1.093939 (1.115561)
+Batch 60/78	 Loss 1.090149 (1.116440)
+==> Epoch 440/800
+Batch 20/78	 Loss 1.223119 (1.135026)
+Batch 40/78	 Loss 1.205790 (1.130876)
+Batch 60/78	 Loss 1.126192 (1.127564)
+==> Epoch 441/800
+Batch 20/78	 Loss 1.130734 (1.130305)
+Batch 40/78	 Loss 1.087086 (1.120765)
+Batch 60/78	 Loss 1.083586 (1.119776)
+==> Epoch 442/800
+Batch 20/78	 Loss 1.158571 (1.126719)
+Batch 40/78	 Loss 1.090527 (1.120376)
+Batch 60/78	 Loss 1.094079 (1.118486)
+==> Epoch 443/800
+Batch 20/78	 Loss 1.145775 (1.104557)
+Batch 40/78	 Loss 1.114163 (1.111314)
+Batch 60/78	 Loss 1.153696 (1.114912)
+==> Epoch 444/800
+Batch 20/78	 Loss 1.326514 (1.135813)
+Batch 40/78	 Loss 1.108505 (1.120779)
+Batch 60/78	 Loss 1.112842 (1.118923)
+==> Epoch 445/800
+Batch 20/78	 Loss 1.088579 (1.116341)
+Batch 40/78	 Loss 1.124106 (1.130714)
+Batch 60/78	 Loss 1.130097 (1.128825)
+==> Epoch 446/800
+Batch 20/78	 Loss 1.093210 (1.132551)
+Batch 40/78	 Loss 1.117575 (1.127054)
+Batch 60/78	 Loss 1.272082 (1.129367)
+==> Epoch 447/800
+Batch 20/78	 Loss 1.093995 (1.111088)
+Batch 40/78	 Loss 1.142363 (1.112674)
+Batch 60/78	 Loss 1.097908 (1.117036)
+==> Epoch 448/800
+Batch 20/78	 Loss 1.120681 (1.120508)
+Batch 40/78	 Loss 1.093927 (1.128523)
+Batch 60/78	 Loss 1.164218 (1.129428)
+==> Epoch 449/800
+Batch 20/78	 Loss 1.120591 (1.114852)
+Batch 40/78	 Loss 1.088627 (1.120713)
+Batch 60/78	 Loss 1.113900 (1.118360)
+==> Epoch 450/800
+Batch 20/78	 Loss 1.082231 (1.126291)
+Batch 40/78	 Loss 1.100266 (1.127192)
+Batch 60/78	 Loss 1.112881 (1.129154)
+==> Test
+Extracted features for query set, obtained 1980-by-2048 matrix
+Extracted features for gallery set, obtained 9330-by-2048 matrix
+Computing distance matrix
+Computing CMC and mAP
+Results ----------
+mAP: 75.5%
+CMC curve
+Rank-1  : 83.0%
+Rank-5  : 93.9%
+Rank-10 : 95.6%
+Rank-20 : 97.0%
+------------------
+==> Epoch 451/800
+Batch 20/78	 Loss 1.097515 (1.112415)
+Batch 40/78	 Loss 1.119374 (1.107183)
+Batch 60/78	 Loss 1.083406 (1.115651)
+==> Epoch 452/800
+Batch 20/78	 Loss 1.095288 (1.119784)
+Batch 40/78	 Loss 1.114917 (1.120985)
+Batch 60/78	 Loss 1.126735 (1.120462)
+==> Epoch 453/800
+Batch 20/78	 Loss 1.176482 (1.147097)
+Batch 40/78	 Loss 1.090070 (1.137402)
+Batch 60/78	 Loss 1.181602 (1.131168)
+==> Epoch 454/800
+Batch 20/78	 Loss 1.121247 (1.117432)
+Batch 40/78	 Loss 1.101048 (1.119400)
+Batch 60/78	 Loss 1.106520 (1.116485)
+==> Epoch 455/800
+Batch 20/78	 Loss 1.106851 (1.102238)
+Batch 40/78	 Loss 1.160448 (1.112833)
+Batch 60/78	 Loss 1.089170 (1.125944)
+==> Epoch 456/800
+Batch 20/78	 Loss 1.096305 (1.122522)
+Batch 40/78	 Loss 1.125358 (1.130734)
+Batch 60/78	 Loss 1.100738 (1.125168)
+==> Epoch 457/800
+Batch 20/78	 Loss 1.087607 (1.128592)
+Batch 40/78	 Loss 1.106426 (1.126744)
+Batch 60/78	 Loss 1.098590 (1.119141)
+==> Epoch 458/800
+Batch 20/78	 Loss 1.117727 (1.119285)
+Batch 40/78	 Loss 1.102521 (1.125225)
+Batch 60/78	 Loss 1.090259 (1.119166)
+==> Epoch 459/800
+Batch 20/78	 Loss 1.103562 (1.115624)
+Batch 40/78	 Loss 1.129786 (1.114564)
+Batch 60/78	 Loss 1.133340 (1.114032)
+==> Epoch 460/800
+Batch 20/78	 Loss 1.102487 (1.130278)
+Batch 40/78	 Loss 1.082377 (1.121730)
+Batch 60/78	 Loss 1.161830 (1.118732)
+==> Epoch 461/800
+Batch 20/78	 Loss 1.118322 (1.120354)
+Batch 40/78	 Loss 1.187212 (1.120655)
+Batch 60/78	 Loss 1.087893 (1.117162)
+==> Epoch 462/800
+Batch 20/78	 Loss 1.094304 (1.137319)
+Batch 40/78	 Loss 1.133187 (1.128129)
+Batch 60/78	 Loss 1.089589 (1.123186)
+==> Epoch 463/800
+Batch 20/78	 Loss 1.131981 (1.106213)
+Batch 40/78	 Loss 1.122716 (1.108904)
+Batch 60/78	 Loss 1.129473 (1.108887)
+==> Epoch 464/800
+Batch 20/78	 Loss 1.110815 (1.124881)
+Batch 40/78	 Loss 1.106449 (1.117636)
+Batch 60/78	 Loss 1.145230 (1.117306)
+==> Epoch 465/800
+Batch 20/78	 Loss 1.079645 (1.108285)
+Batch 40/78	 Loss 1.087554 (1.118458)
+Batch 60/78	 Loss 1.323877 (1.119479)
+==> Epoch 466/800
+Batch 20/78	 Loss 1.096184 (1.112126)
+Batch 40/78	 Loss 1.102308 (1.113206)
+Batch 60/78	 Loss 1.113435 (1.111147)
+==> Epoch 467/800
+Batch 20/78	 Loss 1.170578 (1.134855)
+Batch 40/78	 Loss 1.125420 (1.127070)
+Batch 60/78	 Loss 1.081606 (1.120273)
+==> Epoch 468/800
+Batch 20/78	 Loss 1.115545 (1.124589)
+Batch 40/78	 Loss 1.086927 (1.132363)
+Batch 60/78	 Loss 1.125245 (1.126453)
+==> Epoch 469/800
+Batch 20/78	 Loss 1.093784 (1.114479)
+Batch 40/78	 Loss 1.104492 (1.114146)
+Batch 60/78	 Loss 1.120868 (1.113609)
+==> Epoch 470/800
+Batch 20/78	 Loss 1.504258 (1.143581)
+Batch 40/78	 Loss 1.114262 (1.147568)
+Batch 60/78	 Loss 1.110405 (1.148857)
+==> Epoch 471/800
+Batch 20/78	 Loss 1.089390 (1.115477)
+Batch 40/78	 Loss 1.095941 (1.121450)
+Batch 60/78	 Loss 1.106173 (1.116697)
+==> Epoch 472/800
+Batch 20/78	 Loss 1.082605 (1.109194)
+Batch 40/78	 Loss 1.092379 (1.111668)
+Batch 60/78	 Loss 1.084429 (1.113711)
+==> Epoch 473/800
+Batch 20/78	 Loss 1.135349 (1.124962)
+Batch 40/78	 Loss 1.103377 (1.117164)
+Batch 60/78	 Loss 1.099247 (1.118358)
+==> Epoch 474/800
+Batch 20/78	 Loss 1.118542 (1.123758)
+Batch 40/78	 Loss 1.092253 (1.124229)
+Batch 60/78	 Loss 1.085464 (1.122546)
+==> Epoch 475/800
+Batch 20/78	 Loss 1.106640 (1.123043)
+Batch 40/78	 Loss 1.122474 (1.117993)
+Batch 60/78	 Loss 1.080065 (1.115673)
+==> Epoch 476/800
+Batch 20/78	 Loss 1.123112 (1.167265)
+Batch 40/78	 Loss 1.101101 (1.140019)
+Batch 60/78	 Loss 1.096196 (1.131294)
+==> Epoch 477/800
+Batch 20/78	 Loss 1.166523 (1.120126)
+Batch 40/78	 Loss 1.087205 (1.118648)
+Batch 60/78	 Loss 1.165587 (1.115193)
+==> Epoch 478/800
+Batch 20/78	 Loss 1.094763 (1.118527)
+Batch 40/78	 Loss 1.099468 (1.114482)
+Batch 60/78	 Loss 1.240932 (1.121653)
+==> Epoch 479/800
+Batch 20/78	 Loss 1.089118 (1.112201)
+Batch 40/78	 Loss 1.081390 (1.137224)
+Batch 60/78	 Loss 1.118888 (1.129039)
+==> Epoch 480/800
+Batch 20/78	 Loss 1.142003 (1.140685)
+Batch 40/78	 Loss 1.086136 (1.136769)
+Batch 60/78	 Loss 1.095135 (1.131739)
+==> Epoch 481/800
+Batch 20/78	 Loss 1.096604 (1.121849)
+Batch 40/78	 Loss 1.089141 (1.126272)
+Batch 60/78	 Loss 1.096939 (1.127024)
+==> Epoch 482/800
+Batch 20/78	 Loss 1.087270 (1.107963)
+Batch 40/78	 Loss 1.102431 (1.106144)
+Batch 60/78	 Loss 1.106708 (1.117311)
+==> Epoch 483/800
+Batch 20/78	 Loss 1.102861 (1.116960)
+Batch 40/78	 Loss 1.134927 (1.116814)
+Batch 60/78	 Loss 1.159528 (1.120353)
+==> Epoch 484/800
+Batch 20/78	 Loss 1.076082 (1.116779)
+Batch 40/78	 Loss 1.141567 (1.112932)
+Batch 60/78	 Loss 1.130241 (1.119373)
+==> Epoch 485/800
+Batch 20/78	 Loss 1.081380 (1.107426)
+Batch 40/78	 Loss 1.189134 (1.115760)
+Batch 60/78	 Loss 1.113819 (1.121012)
+==> Epoch 486/800
+Batch 20/78	 Loss 1.100142 (1.110961)
+Batch 40/78	 Loss 1.156895 (1.112258)
+Batch 60/78	 Loss 1.103451 (1.118197)
+==> Epoch 487/800
+Batch 20/78	 Loss 1.088469 (1.128387)
+Batch 40/78	 Loss 1.120865 (1.119859)
+Batch 60/78	 Loss 1.080739 (1.118596)
+==> Epoch 488/800
+Batch 20/78	 Loss 1.104393 (1.108231)
+Batch 40/78	 Loss 1.118395 (1.113888)
+Batch 60/78	 Loss 1.103984 (1.114912)
+==> Epoch 489/800
+Batch 20/78	 Loss 1.099045 (1.109291)
+Batch 40/78	 Loss 1.185448 (1.108891)
+Batch 60/78	 Loss 1.089407 (1.110593)
+==> Epoch 490/800
+Batch 20/78	 Loss 1.092765 (1.101928)
+Batch 40/78	 Loss 1.160712 (1.113493)
+Batch 60/78	 Loss 1.148945 (1.113713)
+==> Epoch 491/800
+Batch 20/78	 Loss 1.101718 (1.119750)
+Batch 40/78	 Loss 1.224801 (1.120172)
+Batch 60/78	 Loss 1.078278 (1.121232)
+==> Epoch 492/800
+Batch 20/78	 Loss 1.242354 (1.117535)
+Batch 40/78	 Loss 1.113799 (1.113313)
+Batch 60/78	 Loss 1.108498 (1.118916)
+==> Epoch 493/800
+Batch 20/78	 Loss 1.081254 (1.113479)
+Batch 40/78	 Loss 1.096130 (1.108736)
+Batch 60/78	 Loss 1.123897 (1.114354)
+==> Epoch 494/800
+Batch 20/78	 Loss 1.102261 (1.117168)
+Batch 40/78	 Loss 1.112232 (1.125401)
+Batch 60/78	 Loss 1.116607 (1.124445)
+==> Epoch 495/800
+Batch 20/78	 Loss 1.102002 (1.116277)
+Batch 40/78	 Loss 1.090203 (1.112993)
+Batch 60/78	 Loss 1.124673 (1.111089)
+==> Epoch 496/800
+Batch 20/78	 Loss 1.104467 (1.124588)
+Batch 40/78	 Loss 1.141835 (1.123968)
+Batch 60/78	 Loss 1.107001 (1.121253)
+==> Epoch 497/800
+Batch 20/78	 Loss 1.081518 (1.113891)
+Batch 40/78	 Loss 1.079280 (1.111073)
+Batch 60/78	 Loss 1.111783 (1.107698)
+==> Epoch 498/800
+Batch 20/78	 Loss 1.076318 (1.121032)
+Batch 40/78	 Loss 1.080181 (1.128870)
+Batch 60/78	 Loss 1.075227 (1.121103)
+==> Epoch 499/800
+Batch 20/78	 Loss 1.101771 (1.122064)
+Batch 40/78	 Loss 1.089495 (1.119952)
+Batch 60/78	 Loss 1.090487 (1.114952)
+==> Epoch 500/800
+Batch 20/78	 Loss 1.255318 (1.109492)
+Batch 40/78	 Loss 1.160092 (1.120550)
+Batch 60/78	 Loss 1.167498 (1.120070)
+==> Test
+Extracted features for query set, obtained 1980-by-2048 matrix
+Extracted features for gallery set, obtained 9330-by-2048 matrix
+Computing distance matrix
+Computing CMC and mAP
+Results ----------
+mAP: 75.6%
+CMC curve
+Rank-1  : 83.1%
+Rank-5  : 93.9%
+Rank-10 : 95.8%
+Rank-20 : 97.2%
+------------------
+==> Epoch 501/800
+Batch 20/78	 Loss 1.149362 (1.114526)
+Batch 40/78	 Loss 1.115170 (1.108997)
+Batch 60/78	 Loss 1.089070 (1.109087)
+==> Epoch 502/800
+Batch 20/78	 Loss 1.122505 (1.111195)
+Batch 40/78	 Loss 1.182325 (1.118234)
+Batch 60/78	 Loss 1.106709 (1.124071)
+==> Epoch 503/800
+Batch 20/78	 Loss 1.133099 (1.121323)
+Batch 40/78	 Loss 1.085865 (1.111718)
+Batch 60/78	 Loss 1.130986 (1.112416)
+==> Epoch 504/800
+Batch 20/78	 Loss 1.126343 (1.124235)
+Batch 40/78	 Loss 1.097638 (1.116350)
+Batch 60/78	 Loss 1.106733 (1.117650)
+==> Epoch 505/800
+Batch 20/78	 Loss 1.081806 (1.104069)
+Batch 40/78	 Loss 1.097333 (1.109811)
+Batch 60/78	 Loss 1.134724 (1.119203)
+==> Epoch 506/800
+Batch 20/78	 Loss 1.106847 (1.115560)
+Batch 40/78	 Loss 1.105028 (1.111680)
+Batch 60/78	 Loss 1.100129 (1.112889)
+==> Epoch 507/800
+Batch 20/78	 Loss 1.083705 (1.115752)
+Batch 40/78	 Loss 1.330034 (1.119304)
+Batch 60/78	 Loss 1.116460 (1.114514)
+==> Epoch 508/800
+Batch 20/78	 Loss 1.289345 (1.117931)
+Batch 40/78	 Loss 1.088638 (1.115316)
+Batch 60/78	 Loss 1.113877 (1.111987)
+==> Epoch 509/800
+Batch 20/78	 Loss 1.101168 (1.115027)
+Batch 40/78	 Loss 1.092552 (1.108716)
+Batch 60/78	 Loss 1.081823 (1.110542)
+==> Epoch 510/800
+Batch 20/78	 Loss 1.104448 (1.119113)
+Batch 40/78	 Loss 1.168067 (1.122961)
+Batch 60/78	 Loss 1.133143 (1.118045)
+==> Epoch 511/800
+Batch 20/78	 Loss 1.089000 (1.133250)
+Batch 40/78	 Loss 1.085539 (1.127016)
+Batch 60/78	 Loss 1.079728 (1.126032)
+==> Epoch 512/800
+Batch 20/78	 Loss 1.184753 (1.116069)
+Batch 40/78	 Loss 1.140698 (1.115523)
+Batch 60/78	 Loss 1.119444 (1.112176)
+==> Epoch 513/800
+Batch 20/78	 Loss 1.085128 (1.109038)
+Batch 40/78	 Loss 1.079443 (1.116172)
+Batch 60/78	 Loss 1.152079 (1.115195)
+==> Epoch 514/800
+Batch 20/78	 Loss 1.120553 (1.104220)
+Batch 40/78	 Loss 1.096233 (1.107921)
+Batch 60/78	 Loss 1.244381 (1.111875)
+==> Epoch 515/800
+Batch 20/78	 Loss 1.164350 (1.119110)
+Batch 40/78	 Loss 1.080812 (1.111191)
+Batch 60/78	 Loss 1.087779 (1.118950)
+==> Epoch 516/800
+Batch 20/78	 Loss 1.137310 (1.110015)
+Batch 40/78	 Loss 1.093019 (1.109288)
+Batch 60/78	 Loss 1.120079 (1.110282)
+==> Epoch 517/800
+Batch 20/78	 Loss 1.087638 (1.109944)
+Batch 40/78	 Loss 1.262019 (1.115011)
+Batch 60/78	 Loss 1.167501 (1.119086)
+==> Epoch 518/800
+Batch 20/78	 Loss 1.106385 (1.116057)
+Batch 40/78	 Loss 1.149059 (1.108777)
+Batch 60/78	 Loss 1.117810 (1.114490)
+==> Epoch 519/800
+Batch 20/78	 Loss 1.086641 (1.126548)
+Batch 40/78	 Loss 1.091424 (1.115174)
+Batch 60/78	 Loss 1.096833 (1.109622)
+==> Epoch 520/800
+Batch 20/78	 Loss 1.097228 (1.111992)
+Batch 40/78	 Loss 1.098675 (1.117879)
+Batch 60/78	 Loss 1.118815 (1.115146)
+==> Epoch 521/800
+Batch 20/78	 Loss 1.124991 (1.114525)
+Batch 40/78	 Loss 1.116314 (1.116113)
+Batch 60/78	 Loss 1.212842 (1.118336)
+==> Epoch 522/800
+Batch 20/78	 Loss 1.081260 (1.109965)
+Batch 40/78	 Loss 1.426748 (1.122539)
+Batch 60/78	 Loss 1.122878 (1.116728)
+==> Epoch 523/800
+Batch 20/78	 Loss 1.118629 (1.131021)
+Batch 40/78	 Loss 1.088957 (1.129717)
+Batch 60/78	 Loss 1.137700 (1.124106)
+==> Epoch 524/800
+Batch 20/78	 Loss 1.106515 (1.107631)
+Batch 40/78	 Loss 1.108338 (1.107543)
+Batch 60/78	 Loss 1.173485 (1.114360)
+==> Epoch 525/800
+Batch 20/78	 Loss 1.077538 (1.103701)
+Batch 40/78	 Loss 1.102010 (1.109805)
+Batch 60/78	 Loss 1.127662 (1.119413)
+==> Epoch 526/800
+Batch 20/78	 Loss 1.225833 (1.117408)
+Batch 40/78	 Loss 1.374040 (1.122156)
+Batch 60/78	 Loss 1.087563 (1.119453)
+==> Epoch 527/800
+Batch 20/78	 Loss 1.100247 (1.101689)
+Batch 40/78	 Loss 1.083987 (1.100970)
+Batch 60/78	 Loss 1.084460 (1.110524)
+==> Epoch 528/800
+Batch 20/78	 Loss 1.091973 (1.123065)
+Batch 40/78	 Loss 1.080818 (1.119288)
+Batch 60/78	 Loss 1.113687 (1.117760)
+==> Epoch 529/800
+Batch 20/78	 Loss 1.122983 (1.115529)
+Batch 40/78	 Loss 1.080943 (1.108869)
+Batch 60/78	 Loss 1.088105 (1.115436)
+==> Epoch 530/800
+Batch 20/78	 Loss 1.100957 (1.113021)
+Batch 40/78	 Loss 1.092023 (1.104838)
+Batch 60/78	 Loss 1.084221 (1.110696)
+==> Epoch 531/800
+Batch 20/78	 Loss 1.078473 (1.111382)
+Batch 40/78	 Loss 1.082588 (1.113321)
+Batch 60/78	 Loss 1.109719 (1.113054)
+==> Epoch 532/800
+Batch 20/78	 Loss 1.100676 (1.123167)
+Batch 40/78	 Loss 1.160709 (1.116756)
+Batch 60/78	 Loss 1.082559 (1.117311)
+==> Epoch 533/800
+Batch 20/78	 Loss 1.099220 (1.137545)
+Batch 40/78	 Loss 1.122250 (1.128574)
+Batch 60/78	 Loss 1.163702 (1.122966)
+==> Epoch 534/800
+Batch 20/78	 Loss 1.094950 (1.117105)
+Batch 40/78	 Loss 1.136990 (1.115322)
+Batch 60/78	 Loss 1.141662 (1.114903)
+==> Epoch 535/800
+Batch 20/78	 Loss 1.088294 (1.112711)
+Batch 40/78	 Loss 1.136826 (1.108632)
+Batch 60/78	 Loss 1.162890 (1.113727)
+==> Epoch 536/800
+Batch 20/78	 Loss 1.107360 (1.104659)
+Batch 40/78	 Loss 1.092158 (1.120428)
+Batch 60/78	 Loss 1.122317 (1.121002)
+==> Epoch 537/800
+Batch 20/78	 Loss 1.088351 (1.107874)
+Batch 40/78	 Loss 1.086950 (1.118402)
+Batch 60/78	 Loss 1.141751 (1.115101)
+==> Epoch 538/800
+Batch 20/78	 Loss 1.106190 (1.113689)
+Batch 40/78	 Loss 1.104107 (1.113149)
+Batch 60/78	 Loss 1.308335 (1.113560)
+==> Epoch 539/800
+Batch 20/78	 Loss 1.091140 (1.106245)
+Batch 40/78	 Loss 1.097372 (1.111145)
+Batch 60/78	 Loss 1.126969 (1.112899)
+==> Epoch 540/800
+Batch 20/78	 Loss 1.076883 (1.137612)
+Batch 40/78	 Loss 1.102587 (1.123786)
+Batch 60/78	 Loss 1.098438 (1.120085)
+==> Epoch 541/800
+Batch 20/78	 Loss 1.085503 (1.108916)
+Batch 40/78	 Loss 1.111204 (1.110110)
+Batch 60/78	 Loss 1.080481 (1.117170)
+==> Epoch 542/800
+Batch 20/78	 Loss 1.196472 (1.111311)
+Batch 40/78	 Loss 1.089313 (1.114801)
+Batch 60/78	 Loss 1.136932 (1.113198)
+==> Epoch 543/800
+Batch 20/78	 Loss 1.093026 (1.098748)
+Batch 40/78	 Loss 1.160049 (1.109782)
+Batch 60/78	 Loss 1.104370 (1.118600)
+==> Epoch 544/800
+Batch 20/78	 Loss 1.122613 (1.101389)
+Batch 40/78	 Loss 1.135091 (1.102431)
+Batch 60/78	 Loss 1.120391 (1.103782)
+==> Epoch 545/800
+Batch 20/78	 Loss 1.101227 (1.113381)
+Batch 40/78	 Loss 1.121558 (1.107022)
+Batch 60/78	 Loss 1.077099 (1.107859)
+==> Epoch 546/800
+Batch 20/78	 Loss 1.113683 (1.107283)
+Batch 40/78	 Loss 1.088594 (1.106374)
+Batch 60/78	 Loss 1.097708 (1.109920)
+==> Epoch 547/800
+Batch 20/78	 Loss 1.103101 (1.118304)
+Batch 40/78	 Loss 1.110936 (1.117793)
+Batch 60/78	 Loss 1.115819 (1.115947)
+==> Epoch 548/800
+Batch 20/78	 Loss 1.198375 (1.120706)
+Batch 40/78	 Loss 1.087196 (1.121483)
+Batch 60/78	 Loss 1.308129 (1.119946)
+==> Epoch 549/800
+Batch 20/78	 Loss 1.084900 (1.107753)
+Batch 40/78	 Loss 1.113835 (1.120366)
+Batch 60/78	 Loss 1.070753 (1.119685)
+==> Epoch 550/800
+Batch 20/78	 Loss 1.087191 (1.109892)
+Batch 40/78	 Loss 1.191285 (1.112570)
+Batch 60/78	 Loss 1.104148 (1.113699)
+==> Test
+Extracted features for query set, obtained 1980-by-2048 matrix
+Extracted features for gallery set, obtained 9330-by-2048 matrix
+Computing distance matrix
+Computing CMC and mAP
+Results ----------
+mAP: 75.7%
+CMC curve
+Rank-1  : 82.9%
+Rank-5  : 94.2%
+Rank-10 : 95.9%
+Rank-20 : 97.3%
+------------------
+==> Epoch 551/800
+Batch 20/78	 Loss 1.083351 (1.105437)
+Batch 40/78	 Loss 1.104681 (1.104029)
+Batch 60/78	 Loss 1.126439 (1.106061)
+==> Epoch 552/800
+Batch 20/78	 Loss 1.106238 (1.109589)
+Batch 40/78	 Loss 1.115030 (1.111075)
+Batch 60/78	 Loss 1.092268 (1.110575)
+==> Epoch 553/800
+Batch 20/78	 Loss 1.108086 (1.112638)
+Batch 40/78	 Loss 1.185055 (1.116630)
+Batch 60/78	 Loss 1.077648 (1.119034)
+==> Epoch 554/800
+Batch 20/78	 Loss 1.076987 (1.136995)
+Batch 40/78	 Loss 1.151212 (1.123612)
+Batch 60/78	 Loss 1.130276 (1.115444)
+==> Epoch 555/800
+Batch 20/78	 Loss 1.119882 (1.113073)
+Batch 40/78	 Loss 1.090819 (1.114850)
+Batch 60/78	 Loss 1.081534 (1.111775)
+==> Epoch 556/800
+Batch 20/78	 Loss 1.104691 (1.129745)
+Batch 40/78	 Loss 1.084420 (1.126000)
+Batch 60/78	 Loss 1.087546 (1.127531)
+==> Epoch 557/800
+Batch 20/78	 Loss 1.107791 (1.105607)
+Batch 40/78	 Loss 1.124738 (1.113052)
+Batch 60/78	 Loss 1.091404 (1.114488)
+==> Epoch 558/800
+Batch 20/78	 Loss 1.172742 (1.117800)
+Batch 40/78	 Loss 1.193758 (1.112878)
+Batch 60/78	 Loss 1.086422 (1.111758)
+==> Epoch 559/800
+Batch 20/78	 Loss 1.088663 (1.119911)
+Batch 40/78	 Loss 1.096979 (1.134964)
+Batch 60/78	 Loss 1.238279 (1.135029)
+==> Epoch 560/800
+Batch 20/78	 Loss 1.100260 (1.111644)
+Batch 40/78	 Loss 1.086685 (1.109878)
+Batch 60/78	 Loss 1.097225 (1.109387)
+==> Epoch 561/800
+Batch 20/78	 Loss 1.097990 (1.112643)
+Batch 40/78	 Loss 1.103445 (1.109412)
+Batch 60/78	 Loss 1.137704 (1.113033)
+==> Epoch 562/800
+Batch 20/78	 Loss 1.125915 (1.116735)
+Batch 40/78	 Loss 1.102898 (1.109261)
+Batch 60/78	 Loss 1.100685 (1.121115)
+==> Epoch 563/800
+Batch 20/78	 Loss 1.087133 (1.100381)
+Batch 40/78	 Loss 1.094281 (1.100781)
+Batch 60/78	 Loss 1.103591 (1.107356)
+==> Epoch 564/800
+Batch 20/78	 Loss 1.222552 (1.128571)
+Batch 40/78	 Loss 1.106334 (1.117261)
+Batch 60/78	 Loss 1.083327 (1.114394)
+==> Epoch 565/800
+Batch 20/78	 Loss 1.192084 (1.119916)
+Batch 40/78	 Loss 1.097727 (1.112088)
+Batch 60/78	 Loss 1.295825 (1.112254)
+==> Epoch 566/800
+Batch 20/78	 Loss 1.076366 (1.119941)
+Batch 40/78	 Loss 1.120162 (1.120599)
+Batch 60/78	 Loss 1.097421 (1.127814)
+==> Epoch 567/800
+Batch 20/78	 Loss 1.115289 (1.129990)
+Batch 40/78	 Loss 1.116668 (1.118156)
+Batch 60/78	 Loss 1.114100 (1.116525)
+==> Epoch 568/800
+Batch 20/78	 Loss 1.090950 (1.112413)
+Batch 40/78	 Loss 1.118780 (1.113110)
+Batch 60/78	 Loss 1.085092 (1.116508)
+==> Epoch 569/800
+Batch 20/78	 Loss 1.096253 (1.121774)
+Batch 40/78	 Loss 1.113736 (1.113207)
+Batch 60/78	 Loss 1.131880 (1.110508)
+==> Epoch 570/800
+Batch 20/78	 Loss 1.122793 (1.112731)
+Batch 40/78	 Loss 1.075692 (1.108984)
+Batch 60/78	 Loss 1.110465 (1.110708)
+==> Epoch 571/800
+Batch 20/78	 Loss 1.072174 (1.099946)
+Batch 40/78	 Loss 1.101358 (1.111977)
+Batch 60/78	 Loss 1.102508 (1.121589)
+==> Epoch 572/800
+Batch 20/78	 Loss 1.129228 (1.116665)
+Batch 40/78	 Loss 1.090636 (1.113798)
+Batch 60/78	 Loss 1.105087 (1.112162)
+==> Epoch 573/800
+Batch 20/78	 Loss 1.106248 (1.112002)
+Batch 40/78	 Loss 1.107751 (1.108241)
+Batch 60/78	 Loss 1.089848 (1.118434)
+==> Epoch 574/800
+Batch 20/78	 Loss 1.114177 (1.094820)
+Batch 40/78	 Loss 1.103435 (1.106977)
+Batch 60/78	 Loss 1.104457 (1.115251)
+==> Epoch 575/800
+Batch 20/78	 Loss 1.087471 (1.115732)
+Batch 40/78	 Loss 1.110190 (1.117423)
+Batch 60/78	 Loss 1.082086 (1.117618)
+==> Epoch 576/800
+Batch 20/78	 Loss 1.144082 (1.117707)
+Batch 40/78	 Loss 1.101774 (1.114757)
+Batch 60/78	 Loss 1.099916 (1.109981)
+==> Epoch 577/800
+Batch 20/78	 Loss 1.181528 (1.114009)
+Batch 40/78	 Loss 1.089452 (1.107994)
+Batch 60/78	 Loss 1.105970 (1.107381)
+==> Epoch 578/800
+Batch 20/78	 Loss 1.080938 (1.113250)
+Batch 40/78	 Loss 1.120041 (1.117526)
+Batch 60/78	 Loss 1.093596 (1.117074)
+==> Epoch 579/800
+Batch 20/78	 Loss 1.087397 (1.105034)
+Batch 40/78	 Loss 1.155657 (1.107699)
+Batch 60/78	 Loss 1.107111 (1.112444)
+==> Epoch 580/800
+Batch 20/78	 Loss 1.105288 (1.132221)
+Batch 40/78	 Loss 1.178531 (1.121148)
+Batch 60/78	 Loss 1.084942 (1.117365)
+==> Epoch 581/800
+Batch 20/78	 Loss 1.075977 (1.115260)
+Batch 40/78	 Loss 1.218441 (1.111089)
+Batch 60/78	 Loss 1.095930 (1.107556)
+==> Epoch 582/800
+Batch 20/78	 Loss 1.121367 (1.105665)
+Batch 40/78	 Loss 1.130736 (1.105994)
+Batch 60/78	 Loss 1.083919 (1.109513)
+==> Epoch 583/800
+Batch 20/78	 Loss 1.103515 (1.112947)
+Batch 40/78	 Loss 1.126371 (1.107885)
+Batch 60/78	 Loss 1.107957 (1.110394)
+==> Epoch 584/800
+Batch 20/78	 Loss 1.078796 (1.098815)
+Batch 40/78	 Loss 1.089667 (1.097360)
+Batch 60/78	 Loss 1.103880 (1.100951)
+==> Epoch 585/800
+Batch 20/78	 Loss 1.072091 (1.098344)
+Batch 40/78	 Loss 1.086351 (1.110262)
+Batch 60/78	 Loss 1.089182 (1.118190)
+==> Epoch 586/800
+Batch 20/78	 Loss 1.090369 (1.112611)
+Batch 40/78	 Loss 1.090037 (1.112657)
+Batch 60/78	 Loss 1.172255 (1.117577)
+==> Epoch 587/800
+Batch 20/78	 Loss 1.108171 (1.123557)
+Batch 40/78	 Loss 1.165794 (1.123889)
+Batch 60/78	 Loss 1.113391 (1.120991)
+==> Epoch 588/800
+Batch 20/78	 Loss 1.096712 (1.099354)
+Batch 40/78	 Loss 1.159172 (1.108298)
+Batch 60/78	 Loss 1.107182 (1.104969)
+==> Epoch 589/800
+Batch 20/78	 Loss 1.097366 (1.103844)
+Batch 40/78	 Loss 1.094726 (1.111016)
+Batch 60/78	 Loss 1.578398 (1.122876)
+==> Epoch 590/800
+Batch 20/78	 Loss 1.086278 (1.102476)
+Batch 40/78	 Loss 1.112411 (1.103598)
+Batch 60/78	 Loss 1.089906 (1.108393)
+==> Epoch 591/800
+Batch 20/78	 Loss 1.102540 (1.123987)
+Batch 40/78	 Loss 1.078493 (1.120842)
+Batch 60/78	 Loss 1.156674 (1.120688)
+==> Epoch 592/800
+Batch 20/78	 Loss 1.122118 (1.105147)
+Batch 40/78	 Loss 1.083853 (1.102588)
+Batch 60/78	 Loss 1.081587 (1.103948)
+==> Epoch 593/800
+Batch 20/78	 Loss 1.116137 (1.110042)
+Batch 40/78	 Loss 1.134513 (1.115256)
+Batch 60/78	 Loss 1.088586 (1.116226)
+==> Epoch 594/800
+Batch 20/78	 Loss 1.095316 (1.112783)
+Batch 40/78	 Loss 1.154041 (1.114039)
+Batch 60/78	 Loss 1.096972 (1.110903)
+==> Epoch 595/800
+Batch 20/78	 Loss 1.189390 (1.111194)
+Batch 40/78	 Loss 1.109169 (1.106969)
+Batch 60/78	 Loss 1.088879 (1.109428)
+==> Epoch 596/800
+Batch 20/78	 Loss 1.091458 (1.119754)
+Batch 40/78	 Loss 1.078288 (1.119403)
+Batch 60/78	 Loss 1.082632 (1.114460)
+==> Epoch 597/800
+Batch 20/78	 Loss 1.083098 (1.108726)
+Batch 40/78	 Loss 1.098541 (1.109302)
+Batch 60/78	 Loss 1.184604 (1.110861)
+==> Epoch 598/800
+Batch 20/78	 Loss 1.082621 (1.102322)
+Batch 40/78	 Loss 1.113375 (1.106342)
+Batch 60/78	 Loss 1.089949 (1.108882)
+==> Epoch 599/800
+Batch 20/78	 Loss 1.139523 (1.117265)
+Batch 40/78	 Loss 1.120020 (1.109429)
+Batch 60/78	 Loss 1.135488 (1.116599)
+==> Epoch 600/800
+Batch 20/78	 Loss 1.108806 (1.127627)
+Batch 40/78	 Loss 1.116888 (1.119477)
+Batch 60/78	 Loss 1.142983 (1.111644)
+==> Test
+Extracted features for query set, obtained 1980-by-2048 matrix
+Extracted features for gallery set, obtained 9330-by-2048 matrix
+Computing distance matrix
+Computing CMC and mAP
+Results ----------
+mAP: 75.7%
+CMC curve
+Rank-1  : 83.2%
+Rank-5  : 94.1%
+Rank-10 : 95.9%
+Rank-20 : 97.2%
+------------------
+==> Epoch 601/800
+Batch 20/78	 Loss 1.087674 (1.125550)
+Batch 40/78	 Loss 1.137379 (1.119293)
+Batch 60/78	 Loss 1.082366 (1.114515)
+==> Epoch 602/800
+Batch 20/78	 Loss 1.106475 (1.098597)
+Batch 40/78	 Loss 1.120794 (1.102349)
+Batch 60/78	 Loss 1.107731 (1.106005)
+==> Epoch 603/800
+Batch 20/78	 Loss 1.086035 (1.103551)
+Batch 40/78	 Loss 1.179675 (1.109414)
+Batch 60/78	 Loss 1.080030 (1.111917)
+==> Epoch 604/800
+Batch 20/78	 Loss 1.149860 (1.128460)
+Batch 40/78	 Loss 1.134743 (1.130674)
+Batch 60/78	 Loss 1.152966 (1.121716)
+==> Epoch 605/800
+Batch 20/78	 Loss 1.099873 (1.106870)
+Batch 40/78	 Loss 1.189494 (1.109829)
+Batch 60/78	 Loss 1.105248 (1.109610)
+==> Epoch 606/800
+Batch 20/78	 Loss 1.107035 (1.105804)
+Batch 40/78	 Loss 1.125830 (1.102822)
+Batch 60/78	 Loss 1.085889 (1.108204)
+==> Epoch 607/800
+Batch 20/78	 Loss 1.113651 (1.140051)
+Batch 40/78	 Loss 1.096266 (1.122474)
+Batch 60/78	 Loss 1.092939 (1.117888)
+==> Epoch 608/800
+Batch 20/78	 Loss 1.083657 (1.111933)
+Batch 40/78	 Loss 1.105946 (1.116419)
+Batch 60/78	 Loss 1.113881 (1.119969)
+==> Epoch 609/800
+Batch 20/78	 Loss 1.101659 (1.112391)
+Batch 40/78	 Loss 1.084871 (1.103815)
+Batch 60/78	 Loss 1.096615 (1.107900)
+==> Epoch 610/800
+Batch 20/78	 Loss 1.082344 (1.107434)
+Batch 40/78	 Loss 1.092266 (1.106676)
+Batch 60/78	 Loss 1.077481 (1.110158)
+==> Epoch 611/800
+Batch 20/78	 Loss 1.106427 (1.124891)
+Batch 40/78	 Loss 1.175012 (1.119679)
+Batch 60/78	 Loss 1.083626 (1.118972)
+==> Epoch 612/800
+Batch 20/78	 Loss 1.111870 (1.119925)
+Batch 40/78	 Loss 1.079726 (1.111737)
+Batch 60/78	 Loss 1.113164 (1.115638)
+==> Epoch 613/800
+Batch 20/78	 Loss 1.095091 (1.097941)
+Batch 40/78	 Loss 1.103085 (1.102363)
+Batch 60/78	 Loss 1.079942 (1.103880)
+==> Epoch 614/800
+Batch 20/78	 Loss 1.089874 (1.113667)
+Batch 40/78	 Loss 1.094002 (1.115603)
+Batch 60/78	 Loss 1.084613 (1.110121)
+==> Epoch 615/800
+Batch 20/78	 Loss 1.118442 (1.121462)
+Batch 40/78	 Loss 1.086130 (1.119146)
+Batch 60/78	 Loss 1.074850 (1.113036)
+==> Epoch 616/800
+Batch 20/78	 Loss 1.124584 (1.110773)
+Batch 40/78	 Loss 1.096422 (1.112095)
+Batch 60/78	 Loss 1.106502 (1.109346)
+==> Epoch 617/800
+Batch 20/78	 Loss 1.088854 (1.123230)
+Batch 40/78	 Loss 1.202104 (1.111641)
+Batch 60/78	 Loss 1.162205 (1.113303)
+==> Epoch 618/800
+Batch 20/78	 Loss 1.075986 (1.098494)
+Batch 40/78	 Loss 1.075359 (1.103221)
+Batch 60/78	 Loss 1.087802 (1.105518)
+==> Epoch 619/800
+Batch 20/78	 Loss 1.118616 (1.097600)
+Batch 40/78	 Loss 1.096521 (1.102644)
+Batch 60/78	 Loss 1.097846 (1.101608)
+==> Epoch 620/800
+Batch 20/78	 Loss 1.086815 (1.106652)
+Batch 40/78	 Loss 1.081703 (1.100629)
+Batch 60/78	 Loss 1.248967 (1.107044)
+==> Epoch 621/800
+Batch 20/78	 Loss 1.206510 (1.109202)
+Batch 40/78	 Loss 1.117245 (1.120215)
+Batch 60/78	 Loss 1.104002 (1.115059)
+==> Epoch 622/800
+Batch 20/78	 Loss 1.116128 (1.113978)
+Batch 40/78	 Loss 1.080016 (1.110645)
+Batch 60/78	 Loss 1.105981 (1.114977)
+==> Epoch 623/800
+Batch 20/78	 Loss 1.088852 (1.117644)
+Batch 40/78	 Loss 1.164670 (1.122514)
+Batch 60/78	 Loss 1.089745 (1.111611)
+==> Epoch 624/800
+Batch 20/78	 Loss 1.090551 (1.113982)
+Batch 40/78	 Loss 1.100497 (1.104383)
+Batch 60/78	 Loss 1.082564 (1.103369)
+==> Epoch 625/800
+Batch 20/78	 Loss 1.107235 (1.112690)
+Batch 40/78	 Loss 1.104330 (1.116128)
+Batch 60/78	 Loss 1.079355 (1.117628)
+==> Epoch 626/800
+Batch 20/78	 Loss 1.077826 (1.124548)
+Batch 40/78	 Loss 1.180250 (1.116330)
+Batch 60/78	 Loss 1.084898 (1.116662)
+==> Epoch 627/800
+Batch 20/78	 Loss 1.083802 (1.113623)
+Batch 40/78	 Loss 1.089198 (1.115154)
+Batch 60/78	 Loss 1.093763 (1.111515)
+==> Epoch 628/800
+Batch 20/78	 Loss 1.144993 (1.097693)
+Batch 40/78	 Loss 1.103150 (1.110513)
+Batch 60/78	 Loss 1.080337 (1.106294)
+==> Epoch 629/800
+Batch 20/78	 Loss 1.139837 (1.103748)
+Batch 40/78	 Loss 1.087060 (1.105624)
+Batch 60/78	 Loss 1.130424 (1.114004)
+==> Epoch 630/800
+Batch 20/78	 Loss 1.126647 (1.132264)
+Batch 40/78	 Loss 1.080313 (1.114590)
+Batch 60/78	 Loss 1.091515 (1.110672)
+==> Epoch 631/800
+Batch 20/78	 Loss 1.076079 (1.120429)
+Batch 40/78	 Loss 1.072841 (1.118801)
+Batch 60/78	 Loss 1.081653 (1.113560)
+==> Epoch 632/800
+Batch 20/78	 Loss 1.087507 (1.103885)
+Batch 40/78	 Loss 1.107435 (1.110793)
+Batch 60/78	 Loss 1.112590 (1.122359)
+==> Epoch 633/800
+Batch 20/78	 Loss 1.085080 (1.105404)
+Batch 40/78	 Loss 1.082805 (1.107938)
+Batch 60/78	 Loss 1.082791 (1.110290)
+==> Epoch 634/800
+Batch 20/78	 Loss 1.118690 (1.121365)
+Batch 40/78	 Loss 1.080664 (1.113860)
+Batch 60/78	 Loss 1.095623 (1.110828)
+==> Epoch 635/800
+Batch 20/78	 Loss 1.085262 (1.095745)
+Batch 40/78	 Loss 1.118903 (1.108252)
+Batch 60/78	 Loss 1.112483 (1.104274)
+==> Epoch 636/800
+Batch 20/78	 Loss 1.085245 (1.103893)
+Batch 40/78	 Loss 1.091227 (1.117172)
+Batch 60/78	 Loss 1.075186 (1.111466)
+==> Epoch 637/800
+Batch 20/78	 Loss 1.252582 (1.118933)
+Batch 40/78	 Loss 1.089381 (1.115307)
+Batch 60/78	 Loss 1.103807 (1.113939)
+==> Epoch 638/800
+Batch 20/78	 Loss 1.096472 (1.117375)
+Batch 40/78	 Loss 1.145901 (1.116736)
+Batch 60/78	 Loss 1.098854 (1.114069)
+==> Epoch 639/800
+Batch 20/78	 Loss 1.081421 (1.096454)
+Batch 40/78	 Loss 1.077081 (1.103027)
+Batch 60/78	 Loss 1.077338 (1.100533)
+==> Epoch 640/800
+Batch 20/78	 Loss 1.086913 (1.106868)
+Batch 40/78	 Loss 1.073344 (1.105634)
+Batch 60/78	 Loss 1.088396 (1.105637)
+==> Epoch 641/800
+Batch 20/78	 Loss 1.108417 (1.105545)
+Batch 40/78	 Loss 1.083127 (1.112420)
+Batch 60/78	 Loss 1.166574 (1.108038)
+==> Epoch 642/800
+Batch 20/78	 Loss 1.077864 (1.095926)
+Batch 40/78	 Loss 1.188824 (1.109658)
+Batch 60/78	 Loss 1.124109 (1.106916)
+==> Epoch 643/800
+Batch 20/78	 Loss 1.090030 (1.112079)
+Batch 40/78	 Loss 1.093301 (1.106609)
+Batch 60/78	 Loss 1.096429 (1.105983)
+==> Epoch 644/800
+Batch 20/78	 Loss 1.307708 (1.112719)
+Batch 40/78	 Loss 1.117364 (1.109122)
+Batch 60/78	 Loss 1.082595 (1.111100)
+==> Epoch 645/800
+Batch 20/78	 Loss 1.077316 (1.099869)
+Batch 40/78	 Loss 1.115199 (1.098685)
+Batch 60/78	 Loss 1.078465 (1.099272)
+==> Epoch 646/800
+Batch 20/78	 Loss 1.095995 (1.100636)
+Batch 40/78	 Loss 1.092409 (1.110309)
+Batch 60/78	 Loss 1.080168 (1.107277)
+==> Epoch 647/800
+Batch 20/78	 Loss 1.079919 (1.117523)
+Batch 40/78	 Loss 1.089833 (1.115585)
+Batch 60/78	 Loss 1.087269 (1.112092)
+==> Epoch 648/800
+Batch 20/78	 Loss 1.138543 (1.103751)
+Batch 40/78	 Loss 1.073991 (1.099630)
+Batch 60/78	 Loss 1.100332 (1.106861)
+==> Epoch 649/800
+Batch 20/78	 Loss 1.142036 (1.122546)
+Batch 40/78	 Loss 1.170367 (1.124135)
+Batch 60/78	 Loss 1.083617 (1.117683)
+==> Epoch 650/800
+Batch 20/78	 Loss 1.097542 (1.102973)
+Batch 40/78	 Loss 1.105754 (1.097694)
+Batch 60/78	 Loss 1.108528 (1.101380)
+==> Test
+Extracted features for query set, obtained 1980-by-2048 matrix
+Extracted features for gallery set, obtained 9330-by-2048 matrix
+Computing distance matrix
+Computing CMC and mAP
+Results ----------
+mAP: 75.8%
+CMC curve
+Rank-1  : 83.3%
+Rank-5  : 93.8%
+Rank-10 : 96.0%
+Rank-20 : 97.3%
+------------------
+==> Epoch 651/800
+Batch 20/78	 Loss 1.074586 (1.108854)
+Batch 40/78	 Loss 1.103029 (1.107083)
+Batch 60/78	 Loss 1.093343 (1.110852)
+==> Epoch 652/800
+Batch 20/78	 Loss 1.085844 (1.099075)
+Batch 40/78	 Loss 1.088008 (1.109536)
+Batch 60/78	 Loss 1.089798 (1.106865)
+==> Epoch 653/800
+Batch 20/78	 Loss 1.078665 (1.104322)
+Batch 40/78	 Loss 1.194245 (1.103327)
+Batch 60/78	 Loss 1.189944 (1.107882)
+==> Epoch 654/800
+Batch 20/78	 Loss 1.087340 (1.097899)
+Batch 40/78	 Loss 1.103166 (1.103454)
+Batch 60/78	 Loss 1.097516 (1.108277)
+==> Epoch 655/800
+Batch 20/78	 Loss 1.087434 (1.109649)
+Batch 40/78	 Loss 1.090955 (1.112531)
+Batch 60/78	 Loss 1.119341 (1.114858)
+==> Epoch 656/800
+Batch 20/78	 Loss 1.088174 (1.107735)
+Batch 40/78	 Loss 1.104311 (1.108480)
+Batch 60/78	 Loss 1.109555 (1.109990)
+==> Epoch 657/800
+Batch 20/78	 Loss 1.082765 (1.098141)
+Batch 40/78	 Loss 1.079396 (1.103259)
+Batch 60/78	 Loss 1.080113 (1.109873)
+==> Epoch 658/800
+Batch 20/78	 Loss 1.173472 (1.107102)
+Batch 40/78	 Loss 1.087036 (1.106088)
+Batch 60/78	 Loss 1.081432 (1.111271)
+==> Epoch 659/800
+Batch 20/78	 Loss 1.118742 (1.104277)
+Batch 40/78	 Loss 1.086671 (1.098760)
+Batch 60/78	 Loss 1.085320 (1.102998)
+==> Epoch 660/800
+Batch 20/78	 Loss 1.080632 (1.119951)
+Batch 40/78	 Loss 1.083583 (1.111330)
+Batch 60/78	 Loss 1.093530 (1.108368)
+==> Epoch 661/800
+Batch 20/78	 Loss 1.097975 (1.106537)
+Batch 40/78	 Loss 1.095164 (1.111982)
+Batch 60/78	 Loss 1.083109 (1.105553)
+==> Epoch 662/800
+Batch 20/78	 Loss 1.102329 (1.107776)
+Batch 40/78	 Loss 1.081919 (1.107291)
+Batch 60/78	 Loss 1.086688 (1.107823)
+==> Epoch 663/800
+Batch 20/78	 Loss 1.104083 (1.097496)
+Batch 40/78	 Loss 1.125694 (1.103582)
+Batch 60/78	 Loss 1.126043 (1.105805)
+==> Epoch 664/800
+Batch 20/78	 Loss 1.111277 (1.114009)
+Batch 40/78	 Loss 1.121145 (1.114914)
+Batch 60/78	 Loss 1.106912 (1.108663)
+==> Epoch 665/800
+Batch 20/78	 Loss 1.093814 (1.114224)
+Batch 40/78	 Loss 1.164251 (1.113379)
+Batch 60/78	 Loss 1.076967 (1.110685)
+==> Epoch 666/800
+Batch 20/78	 Loss 1.084870 (1.116167)
+Batch 40/78	 Loss 1.096256 (1.111213)
+Batch 60/78	 Loss 1.092547 (1.108714)
+==> Epoch 667/800
+Batch 20/78	 Loss 1.105752 (1.102228)
+Batch 40/78	 Loss 1.087064 (1.105406)
+Batch 60/78	 Loss 1.148156 (1.105427)
+==> Epoch 668/800
+Batch 20/78	 Loss 1.098073 (1.125336)
+Batch 40/78	 Loss 1.223895 (1.122021)
+Batch 60/78	 Loss 1.083803 (1.119935)
+==> Epoch 669/800
+Batch 20/78	 Loss 1.075761 (1.111348)
+Batch 40/78	 Loss 1.135036 (1.113959)
+Batch 60/78	 Loss 1.085289 (1.108054)
+==> Epoch 670/800
+Batch 20/78	 Loss 1.329813 (1.122754)
+Batch 40/78	 Loss 1.084995 (1.114682)
+Batch 60/78	 Loss 1.104097 (1.110857)
+==> Epoch 671/800
+Batch 20/78	 Loss 1.139548 (1.106850)
+Batch 40/78	 Loss 1.146621 (1.108568)
+Batch 60/78	 Loss 1.083512 (1.109278)
+==> Epoch 672/800
+Batch 20/78	 Loss 1.115673 (1.121339)
+Batch 40/78	 Loss 1.122983 (1.115098)
+Batch 60/78	 Loss 1.092026 (1.112327)
+==> Epoch 673/800
+Batch 20/78	 Loss 1.098487 (1.123163)
+Batch 40/78	 Loss 1.198548 (1.126478)
+Batch 60/78	 Loss 1.099869 (1.122618)
+==> Epoch 674/800
+Batch 20/78	 Loss 1.108740 (1.109268)
+Batch 40/78	 Loss 1.123759 (1.102190)
+Batch 60/78	 Loss 1.192261 (1.106934)
+==> Epoch 675/800
+Batch 20/78	 Loss 1.112739 (1.109726)
+Batch 40/78	 Loss 1.087620 (1.103285)
+Batch 60/78	 Loss 1.107628 (1.105727)
+==> Epoch 676/800
+Batch 20/78	 Loss 1.138568 (1.120425)
+Batch 40/78	 Loss 1.178573 (1.117698)
+Batch 60/78	 Loss 1.094422 (1.113668)
+==> Epoch 677/800
+Batch 20/78	 Loss 1.092464 (1.109432)
+Batch 40/78	 Loss 1.181810 (1.111555)
+Batch 60/78	 Loss 1.084838 (1.110502)
+==> Epoch 678/800
+Batch 20/78	 Loss 1.106060 (1.101736)
+Batch 40/78	 Loss 1.113072 (1.102714)
+Batch 60/78	 Loss 1.075234 (1.100999)
+==> Epoch 679/800
+Batch 20/78	 Loss 1.081539 (1.099937)
+Batch 40/78	 Loss 1.089962 (1.099695)
+Batch 60/78	 Loss 1.075756 (1.096712)
+==> Epoch 680/800
+Batch 20/78	 Loss 1.113197 (1.124761)
+Batch 40/78	 Loss 1.120904 (1.112935)
+Batch 60/78	 Loss 1.102001 (1.107180)
+==> Epoch 681/800
+Batch 20/78	 Loss 1.097694 (1.117403)
+Batch 40/78	 Loss 1.142233 (1.112328)
+Batch 60/78	 Loss 1.103740 (1.112731)
+==> Epoch 682/800
+Batch 20/78	 Loss 1.087324 (1.102729)
+Batch 40/78	 Loss 1.095138 (1.102537)
+Batch 60/78	 Loss 1.090400 (1.112482)
+==> Epoch 683/800
+Batch 20/78	 Loss 1.109613 (1.119871)
+Batch 40/78	 Loss 1.365040 (1.116743)
+Batch 60/78	 Loss 1.102996 (1.112406)
+==> Epoch 684/800
+Batch 20/78	 Loss 1.117927 (1.095661)
+Batch 40/78	 Loss 1.091532 (1.099272)
+Batch 60/78	 Loss 1.104716 (1.103615)
+==> Epoch 685/800
+Batch 20/78	 Loss 1.106450 (1.110594)
+Batch 40/78	 Loss 1.097539 (1.112268)
+Batch 60/78	 Loss 1.100620 (1.110972)
+==> Epoch 686/800
+Batch 20/78	 Loss 1.094688 (1.105138)
+Batch 40/78	 Loss 1.086782 (1.109752)
+Batch 60/78	 Loss 1.089622 (1.110081)
+==> Epoch 687/800
+Batch 20/78	 Loss 1.101358 (1.101494)
+Batch 40/78	 Loss 1.090554 (1.102704)
+Batch 60/78	 Loss 1.096944 (1.108622)
+==> Epoch 688/800
+Batch 20/78	 Loss 1.102365 (1.104665)
+Batch 40/78	 Loss 1.079254 (1.109927)
+Batch 60/78	 Loss 1.092515 (1.111431)
+==> Epoch 689/800
+Batch 20/78	 Loss 1.087057 (1.113527)
+Batch 40/78	 Loss 1.099400 (1.121910)
+Batch 60/78	 Loss 1.073202 (1.117807)
+==> Epoch 690/800
+Batch 20/78	 Loss 1.082017 (1.125727)
+Batch 40/78	 Loss 1.087970 (1.119096)
+Batch 60/78	 Loss 1.077402 (1.110745)
+==> Epoch 691/800
+Batch 20/78	 Loss 1.085242 (1.113608)
+Batch 40/78	 Loss 1.373653 (1.111082)
+Batch 60/78	 Loss 1.103705 (1.107127)
+==> Epoch 692/800
+Batch 20/78	 Loss 1.104288 (1.103615)
+Batch 40/78	 Loss 1.085344 (1.112822)
+Batch 60/78	 Loss 1.082221 (1.110508)
+==> Epoch 693/800
+Batch 20/78	 Loss 1.122442 (1.108439)
+Batch 40/78	 Loss 1.112975 (1.108407)
+Batch 60/78	 Loss 1.127107 (1.108382)
+==> Epoch 694/800
+Batch 20/78	 Loss 1.095073 (1.109446)
+Batch 40/78	 Loss 1.081721 (1.114587)
+Batch 60/78	 Loss 1.082674 (1.110926)
+==> Epoch 695/800
+Batch 20/78	 Loss 1.091162 (1.117763)
+Batch 40/78	 Loss 1.136656 (1.105604)
+Batch 60/78	 Loss 1.086093 (1.102679)
+==> Epoch 696/800
+Batch 20/78	 Loss 1.118605 (1.105992)
+Batch 40/78	 Loss 1.095324 (1.118068)
+Batch 60/78	 Loss 1.084524 (1.116562)
+==> Epoch 697/800
+Batch 20/78	 Loss 1.112374 (1.098617)
+Batch 40/78	 Loss 1.110702 (1.101978)
+Batch 60/78	 Loss 1.081765 (1.108764)
+==> Epoch 698/800
+Batch 20/78	 Loss 1.173484 (1.121419)
+Batch 40/78	 Loss 1.073321 (1.116527)
+Batch 60/78	 Loss 1.131677 (1.115987)
+==> Epoch 699/800
+Batch 20/78	 Loss 1.116878 (1.118165)
+Batch 40/78	 Loss 1.099206 (1.109692)
+Batch 60/78	 Loss 1.096765 (1.113440)
+==> Epoch 700/800
+Batch 20/78	 Loss 1.100730 (1.111360)
+Batch 40/78	 Loss 1.101159 (1.113350)
+Batch 60/78	 Loss 1.093780 (1.109540)
+==> Test
+Extracted features for query set, obtained 1980-by-2048 matrix
+Extracted features for gallery set, obtained 9330-by-2048 matrix
+Computing distance matrix
+Computing CMC and mAP
+Results ----------
+mAP: 75.8%
+CMC curve
+Rank-1  : 83.1%
+Rank-5  : 94.1%
+Rank-10 : 95.8%
+Rank-20 : 97.1%
+------------------
+==> Epoch 701/800
+Batch 20/78	 Loss 1.106994 (1.109044)
+Batch 40/78	 Loss 1.101204 (1.116299)
+Batch 60/78	 Loss 1.119959 (1.117783)
+==> Epoch 702/800
+Batch 20/78	 Loss 1.089190 (1.113335)
+Batch 40/78	 Loss 1.078893 (1.119102)
+Batch 60/78	 Loss 1.118027 (1.115587)
+==> Epoch 703/800
+Batch 20/78	 Loss 1.116925 (1.109523)
+Batch 40/78	 Loss 1.075434 (1.102862)
+Batch 60/78	 Loss 1.211195 (1.114486)
+==> Epoch 704/800
+Batch 20/78	 Loss 1.150016 (1.099369)
+Batch 40/78	 Loss 1.106323 (1.105638)
+Batch 60/78	 Loss 1.122043 (1.104849)
+==> Epoch 705/800
+Batch 20/78	 Loss 1.113114 (1.101462)
+Batch 40/78	 Loss 1.116035 (1.105413)
+Batch 60/78	 Loss 1.082024 (1.106134)
+==> Epoch 706/800
+Batch 20/78	 Loss 1.099867 (1.097546)
+Batch 40/78	 Loss 1.104818 (1.108655)
+Batch 60/78	 Loss 1.090310 (1.108480)
+==> Epoch 707/800
+Batch 20/78	 Loss 1.177361 (1.122630)
+Batch 40/78	 Loss 1.138567 (1.120295)
+Batch 60/78	 Loss 1.081518 (1.116833)
+==> Epoch 708/800
+Batch 20/78	 Loss 1.097979 (1.129725)
+Batch 40/78	 Loss 1.101273 (1.115106)
+Batch 60/78	 Loss 1.175705 (1.121547)
+==> Epoch 709/800
+Batch 20/78	 Loss 1.093617 (1.100876)
+Batch 40/78	 Loss 1.106440 (1.110054)
+Batch 60/78	 Loss 1.085948 (1.110075)
+==> Epoch 710/800
+Batch 20/78	 Loss 1.085112 (1.104549)
+Batch 40/78	 Loss 1.095084 (1.116434)
+Batch 60/78	 Loss 1.114169 (1.112881)
+==> Epoch 711/800
+Batch 20/78	 Loss 1.079990 (1.101166)
+Batch 40/78	 Loss 1.073170 (1.105889)
+Batch 60/78	 Loss 1.081508 (1.106260)
+==> Epoch 712/800
+Batch 20/78	 Loss 1.074014 (1.102111)
+Batch 40/78	 Loss 1.084177 (1.107257)
+Batch 60/78	 Loss 1.094159 (1.108764)
+==> Epoch 713/800
+Batch 20/78	 Loss 1.119138 (1.121726)
+Batch 40/78	 Loss 1.089527 (1.125673)
+Batch 60/78	 Loss 1.093306 (1.121274)
+==> Epoch 714/800
+Batch 20/78	 Loss 1.144985 (1.108662)
+Batch 40/78	 Loss 1.128940 (1.109237)
+Batch 60/78	 Loss 1.099778 (1.112677)
+==> Epoch 715/800
+Batch 20/78	 Loss 1.087875 (1.102346)
+Batch 40/78	 Loss 1.075906 (1.099362)
+Batch 60/78	 Loss 1.194647 (1.101644)
+==> Epoch 716/800
+Batch 20/78	 Loss 1.089400 (1.105878)
+Batch 40/78	 Loss 1.110383 (1.115273)
+Batch 60/78	 Loss 1.256033 (1.115422)
+==> Epoch 717/800
+Batch 20/78	 Loss 1.088063 (1.141728)
+Batch 40/78	 Loss 1.088850 (1.121154)
+Batch 60/78	 Loss 1.131272 (1.116999)
+==> Epoch 718/800
+Batch 20/78	 Loss 1.143618 (1.107532)
+Batch 40/78	 Loss 1.077968 (1.108990)
+Batch 60/78	 Loss 1.074594 (1.105024)
+==> Epoch 719/800
+Batch 20/78	 Loss 1.093827 (1.104689)
+Batch 40/78	 Loss 1.091280 (1.111661)
+Batch 60/78	 Loss 1.092259 (1.109373)
+==> Epoch 720/800
+Batch 20/78	 Loss 1.104586 (1.124733)
+Batch 40/78	 Loss 1.106816 (1.107761)
+Batch 60/78	 Loss 1.148244 (1.107913)
+==> Epoch 721/800
+Batch 20/78	 Loss 1.088480 (1.117142)
+Batch 40/78	 Loss 1.103895 (1.116240)
+Batch 60/78	 Loss 1.109490 (1.109478)
+==> Epoch 722/800
+Batch 20/78	 Loss 1.089519 (1.099012)
+Batch 40/78	 Loss 1.095396 (1.103075)
+Batch 60/78	 Loss 1.089109 (1.105373)
+==> Epoch 723/800
+Batch 20/78	 Loss 1.089550 (1.108196)
+Batch 40/78	 Loss 1.088608 (1.116961)
+Batch 60/78	 Loss 1.088597 (1.120871)
+==> Epoch 724/800
+Batch 20/78	 Loss 1.236323 (1.114510)
+Batch 40/78	 Loss 1.086307 (1.116113)
+Batch 60/78	 Loss 1.213371 (1.116717)
+==> Epoch 725/800
+Batch 20/78	 Loss 1.126400 (1.111659)
+Batch 40/78	 Loss 1.119975 (1.108164)
+Batch 60/78	 Loss 1.089664 (1.107950)
+==> Epoch 726/800
+Batch 20/78	 Loss 1.236135 (1.123194)
+Batch 40/78	 Loss 1.096022 (1.120388)
+Batch 60/78	 Loss 1.081954 (1.117142)
+==> Epoch 727/800
+Batch 20/78	 Loss 1.139148 (1.122599)
+Batch 40/78	 Loss 1.068244 (1.112382)
+Batch 60/78	 Loss 1.126406 (1.113307)
+==> Epoch 728/800
+Batch 20/78	 Loss 1.105392 (1.104683)
+Batch 40/78	 Loss 1.070878 (1.102854)
+Batch 60/78	 Loss 1.109357 (1.105666)
+==> Epoch 729/800
+Batch 20/78	 Loss 1.234995 (1.112630)
+Batch 40/78	 Loss 1.095049 (1.106999)
+Batch 60/78	 Loss 1.136332 (1.109961)
+==> Epoch 730/800
+Batch 20/78	 Loss 1.099040 (1.100306)
+Batch 40/78	 Loss 1.148027 (1.116659)
+Batch 60/78	 Loss 1.268416 (1.118716)
+==> Epoch 731/800
+Batch 20/78	 Loss 1.104911 (1.094345)
+Batch 40/78	 Loss 1.115043 (1.109452)
+Batch 60/78	 Loss 1.104651 (1.108465)
+==> Epoch 732/800
+Batch 20/78	 Loss 1.092477 (1.095714)
+Batch 40/78	 Loss 1.085261 (1.098591)
+Batch 60/78	 Loss 1.109393 (1.101597)
+==> Epoch 733/800
+Batch 20/78	 Loss 1.167886 (1.110839)
+Batch 40/78	 Loss 1.101330 (1.111150)
+Batch 60/78	 Loss 1.090833 (1.108441)
+==> Epoch 734/800
+Batch 20/78	 Loss 1.083147 (1.102416)
+Batch 40/78	 Loss 1.102843 (1.106057)
+Batch 60/78	 Loss 1.103434 (1.105910)
+==> Epoch 735/800
+Batch 20/78	 Loss 1.084054 (1.103652)
+Batch 40/78	 Loss 1.107726 (1.101007)
+Batch 60/78	 Loss 1.094268 (1.104895)
+==> Epoch 736/800
+Batch 20/78	 Loss 1.123962 (1.102667)
+Batch 40/78	 Loss 1.173411 (1.115861)
+Batch 60/78	 Loss 1.107289 (1.114224)
+==> Epoch 737/800
+Batch 20/78	 Loss 1.080617 (1.114585)
+Batch 40/78	 Loss 1.156442 (1.107600)
+Batch 60/78	 Loss 1.131235 (1.106569)
+==> Epoch 738/800
+Batch 20/78	 Loss 1.193874 (1.108568)
+Batch 40/78	 Loss 1.114549 (1.107581)
+Batch 60/78	 Loss 1.081469 (1.110321)
+==> Epoch 739/800
+Batch 20/78	 Loss 1.135381 (1.100526)
+Batch 40/78	 Loss 1.088569 (1.111001)
+Batch 60/78	 Loss 1.086414 (1.109809)
+==> Epoch 740/800
+Batch 20/78	 Loss 1.103506 (1.129341)
+Batch 40/78	 Loss 1.083356 (1.118758)
+Batch 60/78	 Loss 1.353386 (1.115514)
+==> Epoch 741/800
+Batch 20/78	 Loss 1.103868 (1.104709)
+Batch 40/78	 Loss 1.081345 (1.101593)
+Batch 60/78	 Loss 1.100214 (1.101870)
+==> Epoch 742/800
+Batch 20/78	 Loss 1.082912 (1.109180)
+Batch 40/78	 Loss 1.106251 (1.108382)
+Batch 60/78	 Loss 1.080693 (1.124873)
+==> Epoch 743/800
+Batch 20/78	 Loss 1.371029 (1.111783)
+Batch 40/78	 Loss 1.099764 (1.104218)
+Batch 60/78	 Loss 1.084480 (1.111258)
+==> Epoch 744/800
+Batch 20/78	 Loss 1.094893 (1.110334)
+Batch 40/78	 Loss 1.109288 (1.105335)
+Batch 60/78	 Loss 1.235237 (1.109782)
+==> Epoch 745/800
+Batch 20/78	 Loss 1.106478 (1.138991)
+Batch 40/78	 Loss 1.095604 (1.122916)
+Batch 60/78	 Loss 1.068980 (1.121396)
+==> Epoch 746/800
+Batch 20/78	 Loss 1.100022 (1.129334)
+Batch 40/78	 Loss 1.120663 (1.115238)
+Batch 60/78	 Loss 1.138013 (1.113901)
+==> Epoch 747/800
+Batch 20/78	 Loss 1.137095 (1.123148)
+Batch 40/78	 Loss 1.098304 (1.112676)
+Batch 60/78	 Loss 1.154332 (1.110009)
+==> Epoch 748/800
+Batch 20/78	 Loss 1.079889 (1.102049)
+Batch 40/78	 Loss 1.100153 (1.115223)
+Batch 60/78	 Loss 1.088774 (1.113281)
+==> Epoch 749/800
+Batch 20/78	 Loss 1.082177 (1.116138)
+Batch 40/78	 Loss 1.127905 (1.110292)
+Batch 60/78	 Loss 1.078794 (1.111165)
+==> Epoch 750/800
+Batch 20/78	 Loss 1.089202 (1.121882)
+Batch 40/78	 Loss 1.094400 (1.116298)
+Batch 60/78	 Loss 1.148326 (1.127446)
+==> Test
+Extracted features for query set, obtained 1980-by-2048 matrix
+Extracted features for gallery set, obtained 9330-by-2048 matrix
+Computing distance matrix
+Computing CMC and mAP
+Results ----------
+mAP: 75.7%
+CMC curve
+Rank-1  : 83.0%
+Rank-5  : 94.1%
+Rank-10 : 95.7%
+Rank-20 : 97.2%
+------------------
+==> Epoch 751/800
+Batch 20/78	 Loss 1.108545 (1.101125)
+Batch 40/78	 Loss 1.087613 (1.099799)
+Batch 60/78	 Loss 1.102723 (1.103183)
+==> Epoch 752/800
+Batch 20/78	 Loss 1.132061 (1.108337)
+Batch 40/78	 Loss 1.081950 (1.107337)
+Batch 60/78	 Loss 1.124766 (1.108826)
+==> Epoch 753/800
+Batch 20/78	 Loss 1.092473 (1.096798)
+Batch 40/78	 Loss 1.085792 (1.108466)
+Batch 60/78	 Loss 1.226498 (1.111402)
+==> Epoch 754/800
+Batch 20/78	 Loss 1.183631 (1.111072)
+Batch 40/78	 Loss 1.114805 (1.106530)
+Batch 60/78	 Loss 1.085796 (1.111460)
+==> Epoch 755/800
+Batch 20/78	 Loss 1.074067 (1.108372)
+Batch 40/78	 Loss 1.102153 (1.107980)
+Batch 60/78	 Loss 1.075389 (1.106864)
+==> Epoch 756/800
+Batch 20/78	 Loss 1.090899 (1.127154)
+Batch 40/78	 Loss 1.089929 (1.118204)
+Batch 60/78	 Loss 1.084333 (1.119083)
+==> Epoch 757/800
+Batch 20/78	 Loss 1.095564 (1.101984)
+Batch 40/78	 Loss 1.123650 (1.117256)
+Batch 60/78	 Loss 1.080719 (1.113112)
+==> Epoch 758/800
+Batch 20/78	 Loss 1.125124 (1.103030)
+Batch 40/78	 Loss 1.302666 (1.105325)
+Batch 60/78	 Loss 1.097072 (1.107626)
+==> Epoch 759/800
+Batch 20/78	 Loss 1.098054 (1.094209)
+Batch 40/78	 Loss 1.147313 (1.112686)
+Batch 60/78	 Loss 1.110470 (1.112109)
+==> Epoch 760/800
+Batch 20/78	 Loss 1.103963 (1.115178)
+Batch 40/78	 Loss 1.119719 (1.110010)
+Batch 60/78	 Loss 1.123654 (1.112516)
+==> Epoch 761/800
+Batch 20/78	 Loss 1.087619 (1.110845)
+Batch 40/78	 Loss 1.108389 (1.101936)
+Batch 60/78	 Loss 1.453204 (1.107641)
+==> Epoch 762/800
+Batch 20/78	 Loss 1.094901 (1.106624)
+Batch 40/78	 Loss 1.180853 (1.116993)
+Batch 60/78	 Loss 1.082089 (1.109106)
+==> Epoch 763/800
+Batch 20/78	 Loss 1.079366 (1.100047)
+Batch 40/78	 Loss 1.135436 (1.103288)
+Batch 60/78	 Loss 1.155329 (1.106215)
+==> Epoch 764/800
+Batch 20/78	 Loss 1.089293 (1.095517)
+Batch 40/78	 Loss 1.102967 (1.101435)
+Batch 60/78	 Loss 1.082484 (1.102849)
+==> Epoch 765/800
+Batch 20/78	 Loss 1.080869 (1.102376)
+Batch 40/78	 Loss 1.108778 (1.109007)
+Batch 60/78	 Loss 1.106891 (1.113657)
+==> Epoch 766/800
+Batch 20/78	 Loss 1.075701 (1.096899)
+Batch 40/78	 Loss 1.095954 (1.104401)
+Batch 60/78	 Loss 1.110531 (1.107134)
+==> Epoch 767/800
+Batch 20/78	 Loss 1.124318 (1.101568)
+Batch 40/78	 Loss 1.080187 (1.113634)
+Batch 60/78	 Loss 1.098577 (1.114235)
+==> Epoch 768/800
+Batch 20/78	 Loss 1.096025 (1.127836)
+Batch 40/78	 Loss 1.113978 (1.113519)
+Batch 60/78	 Loss 1.126489 (1.110385)
+==> Epoch 769/800
+Batch 20/78	 Loss 1.290383 (1.115674)
+Batch 40/78	 Loss 1.092337 (1.123224)
+Batch 60/78	 Loss 1.087217 (1.118854)
+==> Epoch 770/800
+Batch 20/78	 Loss 1.087590 (1.095507)
+Batch 40/78	 Loss 1.073970 (1.103828)
+Batch 60/78	 Loss 1.108581 (1.103656)
+==> Epoch 771/800
+Batch 20/78	 Loss 1.145676 (1.115350)
+Batch 40/78	 Loss 1.096950 (1.110691)
+Batch 60/78	 Loss 1.097140 (1.109958)
+==> Epoch 772/800
+Batch 20/78	 Loss 1.149735 (1.101428)
+Batch 40/78	 Loss 1.099305 (1.102667)
+Batch 60/78	 Loss 1.076033 (1.100244)
+==> Epoch 773/800
+Batch 20/78	 Loss 1.085232 (1.124126)
+Batch 40/78	 Loss 1.085452 (1.115036)
+Batch 60/78	 Loss 1.078977 (1.110024)
+==> Epoch 774/800
+Batch 20/78	 Loss 1.087981 (1.109612)
+Batch 40/78	 Loss 1.081854 (1.111911)
+Batch 60/78	 Loss 1.100570 (1.106543)
+==> Epoch 775/800
+Batch 20/78	 Loss 1.544177 (1.127109)
+Batch 40/78	 Loss 1.082757 (1.118815)
+Batch 60/78	 Loss 1.092681 (1.114535)
+==> Epoch 776/800
+Batch 20/78	 Loss 1.091951 (1.117626)
+Batch 40/78	 Loss 1.103888 (1.121795)
+Batch 60/78	 Loss 1.185723 (1.115810)
+==> Epoch 777/800
+Batch 20/78	 Loss 1.115147 (1.100393)
+Batch 40/78	 Loss 1.075522 (1.100356)
+Batch 60/78	 Loss 1.096451 (1.099706)
+==> Epoch 778/800
+Batch 20/78	 Loss 1.079795 (1.093740)
+Batch 40/78	 Loss 1.084610 (1.097309)
+Batch 60/78	 Loss 1.137767 (1.100186)
+==> Epoch 779/800
+Batch 20/78	 Loss 1.090894 (1.113226)
+Batch 40/78	 Loss 1.078487 (1.129410)
+Batch 60/78	 Loss 1.097205 (1.120903)
+==> Epoch 780/800
+Batch 20/78	 Loss 1.136912 (1.109781)
+Batch 40/78	 Loss 1.084715 (1.114277)
+Batch 60/78	 Loss 1.124204 (1.124915)
+==> Epoch 781/800
+Batch 20/78	 Loss 1.095535 (1.105785)
+Batch 40/78	 Loss 1.152504 (1.113579)
+Batch 60/78	 Loss 1.100522 (1.112136)
+==> Epoch 782/800
+Batch 20/78	 Loss 1.158525 (1.103803)
+Batch 40/78	 Loss 1.105266 (1.100684)
+Batch 60/78	 Loss 1.113558 (1.101186)
+==> Epoch 783/800
+Batch 20/78	 Loss 1.094884 (1.105278)
+Batch 40/78	 Loss 1.303553 (1.104352)
+Batch 60/78	 Loss 1.099636 (1.110614)
+==> Epoch 784/800
+Batch 20/78	 Loss 1.083808 (1.112611)
+Batch 40/78	 Loss 1.080842 (1.122961)
+Batch 60/78	 Loss 1.109314 (1.128319)
+==> Epoch 785/800
+Batch 20/78	 Loss 1.095809 (1.107006)
+Batch 40/78	 Loss 1.113201 (1.105538)
+Batch 60/78	 Loss 1.176220 (1.110607)
+==> Epoch 786/800
+Batch 20/78	 Loss 1.084553 (1.131750)
+Batch 40/78	 Loss 1.082435 (1.126948)
+Batch 60/78	 Loss 1.112119 (1.119623)
+==> Epoch 787/800
+Batch 20/78	 Loss 1.105615 (1.122399)
+Batch 40/78	 Loss 1.086354 (1.114230)
+Batch 60/78	 Loss 1.078578 (1.113571)
+==> Epoch 788/800
+Batch 20/78	 Loss 1.140220 (1.101763)
+Batch 40/78	 Loss 1.091139 (1.108555)
+Batch 60/78	 Loss 1.088648 (1.107169)
+==> Epoch 789/800
+Batch 20/78	 Loss 1.087763 (1.115222)
+Batch 40/78	 Loss 1.087556 (1.111443)
+Batch 60/78	 Loss 1.098837 (1.112160)
+==> Epoch 790/800
+Batch 20/78	 Loss 1.192745 (1.111868)
+Batch 40/78	 Loss 1.099386 (1.107124)
+Batch 60/78	 Loss 1.109965 (1.108972)
+==> Epoch 791/800
+Batch 20/78	 Loss 1.106789 (1.112672)
+Batch 40/78	 Loss 1.256074 (1.116382)
+Batch 60/78	 Loss 1.111897 (1.108963)
+==> Epoch 792/800
+Batch 20/78	 Loss 1.122400 (1.092958)
+Batch 40/78	 Loss 1.140865 (1.100741)
+Batch 60/78	 Loss 1.102646 (1.098869)
+==> Epoch 793/800
+Batch 20/78	 Loss 1.095696 (1.110116)
+Batch 40/78	 Loss 1.094770 (1.118917)
+Batch 60/78	 Loss 1.083540 (1.119297)
+==> Epoch 794/800
+Batch 20/78	 Loss 1.093034 (1.109868)
+Batch 40/78	 Loss 1.076308 (1.105857)
+Batch 60/78	 Loss 1.088083 (1.101002)
+==> Epoch 795/800
+Batch 20/78	 Loss 1.201686 (1.105800)
+Batch 40/78	 Loss 1.108765 (1.105312)
+Batch 60/78	 Loss 1.199685 (1.110445)
+==> Epoch 796/800
+Batch 20/78	 Loss 1.087161 (1.106877)
+Batch 40/78	 Loss 1.089245 (1.110232)
+Batch 60/78	 Loss 1.080599 (1.104032)
+==> Epoch 797/800
+Batch 20/78	 Loss 1.090057 (1.094363)
+Batch 40/78	 Loss 1.103462 (1.092774)
+Batch 60/78	 Loss 1.101589 (1.093353)
+==> Epoch 798/800
+Batch 20/78	 Loss 1.080147 (1.125267)
+Batch 40/78	 Loss 1.116079 (1.120810)
+Batch 60/78	 Loss 1.099225 (1.117629)
+==> Epoch 799/800
+Batch 20/78	 Loss 1.079051 (1.117606)
+Batch 40/78	 Loss 1.088281 (1.110495)
+Batch 60/78	 Loss 1.107265 (1.109423)
+==> Epoch 800/800
+Batch 20/78	 Loss 1.114048 (1.100682)
+Batch 40/78	 Loss 1.094563 (1.099239)
+Batch 60/78	 Loss 1.156332 (1.100235)
+==> Test
+Extracted features for query set, obtained 1980-by-2048 matrix
+Extracted features for gallery set, obtained 9330-by-2048 matrix
+Computing distance matrix
+Computing CMC and mAP
+Results ----------
+mAP: 75.8%
+CMC curve
+Rank-1  : 83.3%
+Rank-5  : 94.4%
+Rank-10 : 95.8%
+Rank-20 : 97.2%
+------------------
+Finished. Total elapsed time (h:m:s): 8:48:05
