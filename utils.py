@@ -47,6 +47,15 @@ def save_checkpoint(state, is_best, fpath='checkpoint.pth.tar'):
         shutil.copy(fpath, osp.join(osp.dirname(fpath), 'best_model.pth.tar'))
 
 
+def load_checkpoint(ckpt, model):
+    checkpoint = torch.load(ckpt)
+    state_dict = checkpoint['state_dict']
+    model.load_state_dict(state_dict, strict=False)
+
+    epoch = checkpoint.get('epoch', -1) + 1
+    return epoch
+
+
 class Logger(object):
     """
     Write console output to external text file.

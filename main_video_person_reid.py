@@ -23,7 +23,7 @@ import transforms as T
 import models
 from models import resnet3d
 from losses import CrossEntropyLabelSmooth, TripletLoss
-from utils import AverageMeter, Logger, save_checkpoint
+from utils import AverageMeter, Logger, save_checkpoint, load_checkpoint
 from eval_metrics import evaluate
 from samplers import RandomIdentitySampler
 
@@ -70,6 +70,7 @@ parser.add_argument('--seed', type=int, default=1, help="manual seed")
 parser.add_argument('--pretrained-model', type=str,
                     default='/home/long/.torch/models/resnet-50-kinetics.pth',
                     help='need to be set for resnet3d models')
+parser.add_argument('--ckpt', type=str, default='', help='pretrained checkpoint')
 parser.add_argument('--evaluate', action='store_true', help="evaluation only")
 parser.add_argument('--eval-step', type=int, default=50,
                     help="run evaluation for every N epochs (set to -1 to test after training)")
@@ -152,6 +153,10 @@ def main():
     else:
         model = models.init_model(name=args.arch, num_classes=dataset.num_train_pids, loss={'xent', 'htri'})
     print("Model size: {:.5f}M".format(sum(p.numel() for p in model.parameters()) / 1000000.0))
+
+    if len(args.ckpt) > 0:
+        epoch = load_checkpoint(args.ckpt, model)
+        print("Loading checkpoint from '{}', epoch {}".format(args.ckpt, epoch))
 
     criterion_xent = CrossEntropyLabelSmooth(num_classes=dataset.num_train_pids, use_gpu=use_gpu)
     criterion_htri = TripletLoss(margin=args.margin)
